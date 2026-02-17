@@ -96,17 +96,15 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    letter-spacing: 0.5px;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
     color: var(--color-text-primary);
+    text-decoration: none;
 }
 
-.logo svg {
-    width: 24px;
-    height: 24px;
-}
+
 
 .nav-links {
     display: flex;
@@ -927,22 +925,16 @@ body {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    letter-spacing: 0.5px;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
     color: var(--color-text-primary);
     text-decoration: none;
     margin-bottom: var(--spacing-sm);
 }
 
-.footer-logo img,
-.logo img {
-    height: 32px;
-    width: auto;
-    border-radius: 4px;
-    /* Optional rounded corners for jpg */
-}
+
 
 .footer-social {
     display: flex;
