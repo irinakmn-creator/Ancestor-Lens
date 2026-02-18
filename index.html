@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
 </head>
 
 <body>
@@ -24,11 +25,28 @@
                     Ancestor Lens
                 </a>
                 <div class="nav-links">
-                    <a href="#how-it-works">How it works</a>
-                    <a href="#features">Features</a>
-                    <a href="#faq">FAQ</a>
+                    <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
+                    <a href="#features" data-i18n="nav-features">Features</a>
+                    <a href="#faq" data-i18n="nav-faq">FAQ</a>
                 </div>
-                <a href="#download" class="btn btn-primary">Download App</a>
+                <div class="nav-actions">
+                    <div class="lang-switcher">
+                        <button class="lang-btn" id="langBtn">
+                            <span class="current-lang">EN</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <button onclick="changeLanguage('en')">EN</button>
+                            <button onclick="changeLanguage('de')">DE</button>
+                            <button onclick="changeLanguage('es')">ES</button>
+                        </div>
+                    </div>
+                    <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                        class="btn btn-primary" data-i18n="nav-download" target="_blank">Download App</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -38,25 +56,27 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="badge">
+                    <div class="badge" data-i18n="hero-badge">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z"
                                 fill="currentColor" />
                         </svg>
                         VISUAL DISCOVERY AI
                     </div>
-                    <h1>Discover your <span class="accent">ancestry</span> in a new way.</h1>
-                    <p class="subtitle">Explore your ethnic background, ancestral roots, and historical connections
+                    <h1 data-i18n="hero-title">Discover your <span class="accent">ancestry</span> in a new way.</h1>
+                    <p class="subtitle" data-i18n="hero-subtitle">Explore your ethnic background, ancestral roots, and
+                        historical connections
                         through a visual, AI-powered experience — no DNA test required.</p>
                     <div class="hero-cta">
-                        <a href="#download" class="btn btn-primary btn-large">
+                        <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                            class="btn btn-primary btn-large" target="_blank" data-i18n="hero-cta-ios">
                             Download on iOS
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7 10L13 10M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
                             </svg>
                         </a>
-                        <button class="btn btn-secondary btn-large">
+                        <button class="btn btn-secondary btn-large" data-i18n="hero-cta-how">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" />
                                 <path d="M8 8L12 10L8 12V8Z" fill="currentColor" />
@@ -76,21 +96,24 @@
                                         <span></span>
                                         <span></span>
                                     </div>
-                                    <div class="app-title">RESULTS</div>
+                                    <div class="app-title" data-i18n="mockup-results">RESULTS</div>
                                     <div class="profile-icon"></div>
                                 </div>
                                 <div class="app-content">
                                     <div class="status-badge">
                                         <div class="status-dot"></div>
-                                        Analysis Complete
+                                        <span data-i18n="mockup-status">Analysis Complete</span>
                                     </div>
-                                    <div class="match-percentage">92% Match</div>
+                                    <div class="match-percentage" data-i18n="mockup-match">92% Match</div>
                                     <div class="portrait-card">
                                         <div class="portrait-image"></div>
                                         <div class="portrait-info">
-                                            <div class="portrait-label">YOUR HISTORICAL MATCH</div>
-                                            <div class="portrait-name">Victorian Era</div>
-                                            <div class="portrait-subtitle">High confidence match</div>
+                                            <div class="portrait-label" data-i18n="mockup-portrait-label">YOUR
+                                                HISTORICAL MATCH</div>
+                                            <div class="portrait-name" data-i18n="mockup-portrait-name">Victorian Era
+                                            </div>
+                                            <div class="portrait-subtitle" data-i18n="mockup-portrait-subtitle">High
+                                                confidence match</div>
                                         </div>
                                     </div>
                                     <div class="info-cards">
@@ -100,8 +123,10 @@
                                                     stroke-width="1.5" />
                                             </svg>
                                             <div class="info-card-content">
-                                                <div class="info-label">REGION ORIGIN</div>
-                                                <div class="info-value">Central European</div>
+                                                <div class="info-label" data-i18n="mockup-info-origin">REGION ORIGIN
+                                                </div>
+                                                <div class="info-value" data-i18n="mockup-info-origin-val">Central
+                                                    European</div>
                                                 <div class="info-percent">64%</div>
                                             </div>
                                         </div>
@@ -111,8 +136,10 @@
                                                     stroke="currentColor" stroke-width="1.5" />
                                             </svg>
                                             <div class="info-card-content">
-                                                <div class="info-label">MIGRATION PATH</div>
-                                                <div class="info-value">19th Century</div>
+                                                <div class="info-label" data-i18n="mockup-info-path">MIGRATION PATH
+                                                </div>
+                                                <div class="info-value" data-i18n="mockup-info-path-val">19th Century
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -128,25 +155,26 @@
     <!-- Positioning Section -->
     <section class="positioning">
         <div class="container">
-            <h2 class="positioning-title">Not a traditional genealogy app.</h2>
-            <p class="positioning-text">Ancestor Lens helps you explore the broader picture of ancestry, heritage, and
+            <h2 class="positioning-title" data-i18n="pos-title">Not a traditional genealogy app.</h2>
+            <p class="positioning-text" data-i18n="pos-text">Ancestor Lens helps you explore the broader picture of
+                ancestry, heritage, and
                 identity through visual and cultural patterns. It creates a narrative bridge to your past.</p>
             <div class="trust-badges">
-                <div class="trust-badge">
+                <div class="trust-badge" data-i18n="pos-badge-dna">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
                         <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                     No DNA Kit Required
                 </div>
-                <div class="trust-badge">
+                <div class="trust-badge" data-i18n="pos-badge-instant">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
                         <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                     Instant Results
                 </div>
-                <div class="trust-badge">
+                <div class="trust-badge" data-i18n="pos-badge-private">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <rect x="5" y="8" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.5" />
                         <path d="M7 8V6C7 4.34315 8.34315 3 10 3C11.6569 3 13 4.34315 13 6V8" stroke="currentColor"
@@ -170,8 +198,9 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </div>
-                    <h3>Explore Origins</h3>
-                    <p>Discover possible ethnic and regional roots through advanced visual pattern analysis.</p>
+                    <h3 data-i18n="val-card-1-h">Explore Origins</h3>
+                    <p data-i18n="val-card-1-p">Discover possible ethnic and regional roots through advanced visual
+                        pattern analysis.</p>
                 </div>
                 <div class="value-card">
                     <div class="card-icon">
@@ -184,8 +213,9 @@
                             <line x1="7" y1="16" x2="17" y2="16"></line>
                         </svg>
                     </div>
-                    <h3>Historical Twin</h3>
-                    <p>See which historical figure you resemble. Find where your ancestry meets history.</p>
+                    <h3 data-i18n="val-card-2-h">Historical Twin</h3>
+                    <p data-i18n="val-card-2-p">See which historical figure you resemble. Find where your ancestry meets
+                        history.</p>
                 </div>
                 <div class="value-card">
                     <div class="card-icon">
@@ -196,8 +226,9 @@
                             <line x1="16" y1="6" x2="16" y2="22"></line>
                         </svg>
                     </div>
-                    <h3>Ancestral Map</h3>
-                    <p>Visualize where your imagined ancestors may have lived across the globe.</p>
+                    <h3 data-i18n="val-card-3-h">Ancestral Map</h3>
+                    <p data-i18n="val-card-3-p">Visualize where your imagined ancestors may have lived across the globe.
+                    </p>
                 </div>
                 <div class="value-card">
                     <div class="card-icon">
@@ -208,8 +239,9 @@
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                     </div>
-                    <h3>Weekly Insights</h3>
-                    <p>Receive personalized cultural insights inspired by your specific ancestry archetype.</p>
+                    <h3 data-i18n="val-card-4-h">Weekly Insights</h3>
+                    <p data-i18n="val-card-4-p">Receive personalized cultural insights inspired by your specific
+                        ancestry archetype.</p>
                 </div>
             </div>
         </div>
@@ -218,25 +250,28 @@
     <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2>How Ancestor Lens Works</h2>
-            <p class="section-subtitle">No DNA. No forms. No waiting.</p>
+            <h2 data-i18n="how-h2">How Ancestor Lens Works</h2>
+            <p class="section-subtitle" data-i18n="how-subtitle">No DNA. No forms. No waiting.</p>
             <div class="steps-container">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Upload Photo</h3>
-                    <p>Take a selfie or upload a photo. Our system prioritizes privacy and security.</p>
+                    <h3 data-i18n="how-step-1-h">Upload Photo</h3>
+                    <p data-i18n="how-step-1-p">Take a selfie or upload a photo. Our system prioritizes privacy and
+                        security.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>AI Analysis</h3>
-                    <p>Our algorithm identifies visual patterns linked to historical and ethnic regions.</p>
+                    <h3 data-i18n="how-step-2-h">AI Analysis</h3>
+                    <p data-i18n="how-step-2-p">Our algorithm identifies visual patterns linked to historical and ethnic
+                        regions.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Instant Discovery</h3>
-                    <p>Unlock your heritage portraits, origin maps, and historical twins instantly.</p>
+                    <h3 data-i18n="how-step-3-h">Instant Discovery</h3>
+                    <p data-i18n="how-step-3-p">Unlock your heritage portraits, origin maps, and historical twins
+                        instantly.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +284,7 @@
                 <div class="feature-visual">
                     <div class="ethnicity-card">
                         <div class="card-header">
-                            <h4>Ethnicity Estimate</h4>
+                            <h4 data-i18n="feat-1-card-h">Ethnicity Estimate</h4>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <circle cx="10" cy="10" r="2" fill="currentColor" />
                                 <circle cx="4" cy="10" r="2" fill="currentColor" />
@@ -259,7 +294,7 @@
                         <div class="ethnicity-items">
                             <div class="ethnicity-item">
                                 <div class="ethnicity-info">
-                                    <span class="ethnicity-name">Scandinavian</span>
+                                    <span class="ethnicity-name" data-i18n="feat-1-ethnic-1">Scandinavian</span>
                                     <span class="ethnicity-percent">42%</span>
                                 </div>
                                 <div class="ethnicity-bar">
@@ -268,7 +303,7 @@
                             </div>
                             <div class="ethnicity-item">
                                 <div class="ethnicity-info">
-                                    <span class="ethnicity-name">British Isles</span>
+                                    <span class="ethnicity-name" data-i18n="feat-1-ethnic-2">British Isles</span>
                                     <span class="ethnicity-percent">28%</span>
                                 </div>
                                 <div class="ethnicity-bar">
@@ -277,7 +312,7 @@
                             </div>
                             <div class="ethnicity-item">
                                 <div class="ethnicity-info">
-                                    <span class="ethnicity-name">Eastern European</span>
+                                    <span class="ethnicity-name" data-i18n="feat-1-ethnic-3">Eastern European</span>
                                     <span class="ethnicity-percent">15%</span>
                                 </div>
                                 <div class="ethnicity-bar">
@@ -295,19 +330,21 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="context-title">Global Context</div>
-                                <div class="context-text">Your unique mix matches only 0.4% of users.</div>
+                                <div class="context-title" data-i18n="feat-1-global-h">Global Context</div>
+                                <div class="context-text" data-i18n="feat-1-global-p">Your unique mix matches only 0.4%
+                                    of users.</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="feature-text">
-                    <h2>Ancestry Analysis</h2>
-                    <p>Our advanced model analyzes facial features to provide an estimated breakdown of your heritage.
+                    <h2 data-i18n="feat-1-h2">Ancestry Analysis</h2>
+                    <p data-i18n="feat-1-p">Our advanced model analyzes facial features to provide an estimated
+                        breakdown of your heritage.
                         While not a DNA test, it offers a fascinating visual perspective on where you might come from.
                     </p>
                     <ul class="feature-list">
-                        <li>
+                        <li data-i18n="feat-1-item-1">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
                                 <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="1.5"
@@ -315,7 +352,7 @@
                             </svg>
                             Regional breakdown percentages
                         </li>
-                        <li>
+                        <li data-i18n="feat-1-item-2">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
                                 <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="1.5"
@@ -323,7 +360,7 @@
                             </svg>
                             Visual similarities to ethnic groups
                         </li>
-                        <li>
+                        <li data-i18n="feat-1-item-3">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
                                 <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="1.5"
@@ -342,8 +379,9 @@
         <div class="container">
             <div class="feature-content">
                 <div class="feature-text">
-                    <h2>Meet Your Historical Twin</h2>
-                    <p>Ever wondered if you look like a 19th-century poet or a Renaissance noble? We scan thousands of
+                    <h2 data-i18n="feat-2-h2">Meet Your Historical Twin</h2>
+                    <p data-i18n="feat-2-p">Ever wondered if you look like a 19th-century poet or a Renaissance noble?
+                        We scan thousands of
                         historical portraits to find your doppelgänger from the past.</p>
                 </div>
                 <div class="feature-visual">
@@ -385,8 +423,9 @@
     <!-- Emotional Section -->
     <section class="emotional-section">
         <div class="container">
-            <h2>See Yourself Through <span class="accent-gold">History</span></h2>
-            <p>Ancestry is more than data. It's culture, story, and identity — reimagined through a modern lens. Connect
+            <h2 data-i18n="emo-h2">See Yourself Through <span class="accent-gold">History</span></h2>
+            <p data-i18n="emo-p">Ancestry is more than data. It's culture, story, and identity — reimagined through a
+                modern lens. Connect
                 with the faces that came before you.</p>
         </div>
     </section>
@@ -397,32 +436,34 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Is this a DNA test?</span>
+                        <span data-i18n="faq-q-1">Is this a DNA test?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M6 8L10 12L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>No — Ancestor Lens is not a DNA test.</p>
-                            <p>You don’t need to send saliva, wait for a lab, or share genetic data. Ancestor Lens uses
+                            <p data-i18n="faq-a-1-p1">No — Ancestor Lens is not a DNA test.</p>
+                            <p data-i18n="faq-a-1-p2">You don’t need to send saliva, wait for a lab, or share genetic
+                                data. Ancestor Lens uses
                                 advanced AI to analyze historical, cultural, and ancestral patterns based on your input.
                                 It gives you deep heritage insights instantly — directly in the app.</p>
-                            <p>No labs. No shipping. No waiting. Just instant discovery.</p>
+                            <p data-i18n="faq-a-1-p3">No labs. No shipping. No waiting. Just instant discovery.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do I need special equipment?</span>
+                        <span data-i18n="faq-q-2">Do I need special equipment?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M6 8L10 12L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>No special equipment needed. All you need is your phone.</p>
-                            <p>Everything works directly inside the app — no kits, no external devices, no paperwork.
+                            <p data-i18n="faq-a-2-p1">No special equipment needed. All you need is your phone.</p>
+                            <p data-i18n="faq-a-2-p2">Everything works directly inside the app — no kits, no external
+                                devices, no paperwork.
                                 You answer a few guided questions, and your insights are generated instantly. It takes
                                 less than 2 minutes to begin.</p>
                         </div>
@@ -430,43 +471,47 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Is my data secure?</span>
+                        <span data-i18n="faq-q-3">Is my data secure?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M6 8L10 12L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Yes. Your privacy is a priority.</p>
+                            <p data-i18n="faq-a-3-p1">Yes. Your privacy is a priority.</p>
                             <ul>
-                                <li>We do not collect DNA</li>
-                                <li>We do not sell personal data</li>
-                                <li>Your information is encrypted</li>
-                                <li>You can delete your data anytime</li>
+                                <li data-i18n="faq-a-3-item-1">We do not collect DNA</li>
+                                <li data-i18n="faq-a-3-item-2">We do not sell personal data</li>
+                                <li data-i18n="faq-a-3-item-3">Your information is encrypted</li>
+                                <li data-i18n="faq-a-3-item-4">You can delete your data anytime</li>
                             </ul>
-                            <p>Ancestor Lens is built with privacy-first architecture. Your identity stays yours.</p>
+                            <p data-i18n="faq-a-3-p2">Ancestor Lens is built with privacy-first architecture. Your
+                                identity stays yours.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Who is this app for?</span>
+                        <span data-i18n="faq-q-4">Who is this app for?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M6 8L10 12L14 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                         </svg>
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            <p>Ancestor Lens is for:</p>
+                            <p data-i18n="faq-a-4-p1">Ancestor Lens is for:</p>
                             <ul>
-                                <li>Curious minds who want to explore their roots</li>
-                                <li>People who love history & cultural identity</li>
-                                <li>Families who enjoy discovering surprises together</li>
-                                <li>Anyone who has ever asked: “Where do I really come from?”</li>
+                                <li data-i18n="faq-a-4-item-1">Curious minds who want to explore their roots</li>
+                                <li data-i18n="faq-a-4-item-2">People who love history & cultural identity</li>
+                                <li data-i18n="faq-a-4-item-3">Families who enjoy discovering surprises together</li>
+                                <li data-i18n="faq-a-4-item-4">Anyone who has ever asked: “Where do I really come from?”
+                                </li>
                             </ul>
-                            <p>It’s especially popular among Millennials & Gen Z, couples testing their “unexpected
+                            <p data-i18n="faq-a-4-p2">It’s especially popular among Millennials & Gen Z, couples testing
+                                their “unexpected
                                 heritage”, and families reacting together (yes — grandparents love it).</p>
-                            <p>If you’re curious about who you are beyond borders — this is for you.</p>
+                            <p data-i18n="faq-a-4-p3">If you’re curious about who you are beyond borders — this is for
+                                you.</p>
                         </div>
                     </div>
                 </div>
@@ -477,20 +522,21 @@
     <!-- Blog Section -->
     <section class="blog" id="blog">
         <div class="container">
-            <h2 class="blog-main-title">Insights & Heritage</h2>
-            <p class="section-subtitle">Explore the stories and science behind your roots.</p>
+            <h2 class="blog-main-title" data-i18n="blog-title">Insights & Heritage</h2>
+            <p class="section-subtitle" data-i18n="blog-subtitle">Explore the stories and science behind your roots.</p>
             <div class="blog-grid">
                 <a href="blog-curiosity.html" class="blog-card">
                     <div class="blog-image">
                         <img src="blog-curiosity.png" alt="Why Are We So Curious About Our Ancestry?">
                     </div>
                     <div class="blog-content">
-                        <div class="blog-tag">Psychology</div>
-                        <h3 class="blog-title">Why Are We So Curious About Our Ancestry?</h3>
-                        <p class="blog-excerpt">The psychology behind wanting to know your roots and the deep human need
+                        <div class="blog-tag" data-i18n="blog-tag-1">Psychology</div>
+                        <h3 class="blog-title" data-i18n="blog-h-1">Why Are We So Curious About Our Ancestry?</h3>
+                        <p class="blog-excerpt" data-i18n="blog-p-1">The psychology behind wanting to know your roots
+                            and the deep human need
                             for belonging.</p>
-                        <span class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
+                        <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
                             </svg></span>
@@ -501,12 +547,14 @@
                         <img src="blog-dna-vs-ai.png" alt="DNA Test vs AI Ancestry Analysis">
                     </div>
                     <div class="blog-content">
-                        <div class="blog-tag">Science</div>
-                        <h3 class="blog-title">DNA Test vs AI Ancestry Analysis: What’s the Difference?</h3>
-                        <p class="blog-excerpt">Understanding the core differences between traditional lab tests and
+                        <div class="blog-tag" data-i18n="blog-tag-2">Science</div>
+                        <h3 class="blog-title" data-i18n="blog-h-2">DNA Test vs AI Ancestry Analysis: What’s the
+                            Difference?</h3>
+                        <p class="blog-excerpt" data-i18n="blog-p-2">Understanding the core differences between
+                            traditional lab tests and
                             instant AI exploration.</p>
-                        <span class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
+                        <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
                             </svg></span>
@@ -517,12 +565,13 @@
                         <img src="blog-identity.png" alt="How Your Ancestry Shapes Who You Are">
                     </div>
                     <div class="blog-content">
-                        <div class="blog-tag">Heritage</div>
-                        <h3 class="blog-title">How Your Ancestry Shapes Who You Are</h3>
-                        <p class="blog-excerpt">Discover how your heritage influences your personality and traits even
+                        <div class="blog-tag" data-i18n="blog-tag-3">Heritage</div>
+                        <h3 class="blog-title" data-i18n="blog-h-3">How Your Ancestry Shapes Who You Are</h3>
+                        <p class="blog-excerpt" data-i18n="blog-p-3">Discover how your heritage influences your
+                            personality and traits even
                             if you don't realize it.</p>
-                        <span class="blog-link">Read Article <svg width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
+                        <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" />
                             </svg></span>
@@ -536,9 +585,11 @@
     <section class="final-cta" id="download">
         <div class="container">
             <div class="cta-content">
-                <h2>Start Your Ancestry Discovery Today</h2>
-                <p>Join thousands of others exploring their heritage visually. Available on iOS. No DNA required.</p>
-                <a href="#" class="btn btn-primary btn-large">Download Ancestor Lens</a>
+                <h2 data-i18n="cta-h2">Start Your Ancestry Discovery Today</h2>
+                <p data-i18n="cta-p">Join thousands of others exploring their heritage visually. Available on iOS. No
+                    DNA required.</p>
+                <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                    class="btn btn-primary btn-large" target="_blank" data-i18n="cta-btn">Download Ancestor Lens</a>
             </div>
         </div>
     </section>
@@ -546,11 +597,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-left">
+                <div class="footer-left" data-i18n="footer-copy">
                     Ancestor Lens © 2024. All rights reserved.
                 </div>
                 <div class="footer-right">
-                    <span class="social-label">Follow Us</span>
+                    <span class="social-label" data-i18n="footer-social">Follow Us</span>
                     <div class="social-links">
                         <a href="https://www.tiktok.com/@ancestorlens" target="_blank" aria-label="TikTok">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -577,6 +628,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

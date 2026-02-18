@@ -90,3 +90,60 @@ document.querySelectorAll('.value-card').forEach(card => {
         this.style.boxShadow = 'none';
     });
 });
+
+// --- Language Switcher Logic ---
+
+const langBtn = document.getElementById('langBtn');
+const langDropdown = document.getElementById('langDropdown');
+const currentLangSpan = langBtn.querySelector('.current-lang');
+
+// Toggle dropdown
+langBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', () => {
+    langDropdown.classList.remove('active');
+});
+
+// Initialize language
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('ancestor-lens-lang') || 'en';
+    changeLanguage(savedLang);
+});
+
+function changeLanguage(lang) {
+    if (!translations[lang]) return;
+
+    // Update all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const translation = translations[lang][key];
+
+        if (translation) {
+            // Use innerHTML for titles/text that might contain spans/break tags
+            if (key.includes('title') || key.includes('h2') || key.includes('badge') || key.includes('emo-h2')) {
+                el.innerHTML = translation;
+            } else {
+                el.textContent = translation;
+            }
+        }
+    });
+
+    // Update current lang display
+    currentLangSpan.textContent = lang.toUpperCase();
+
+    // Persist choice
+    localStorage.setItem('ancestor-lens-lang', lang);
+
+    // Update document lang attribute
+    document.documentElement.lang = lang;
+
+    // Reset intersection observer entries if needed (optional)
+    // Some translations might change element height, affecting scroll animations
+}
+
+// Make changeLanguage global for the onclick handlers
+window.changeLanguage = changeLanguage;
