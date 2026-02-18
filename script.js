@@ -61,17 +61,17 @@ if (ethnicityCard) {
 // FAQ accordion functionality
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', function () {
-        const svg = this.querySelector('svg');
-        const isOpen = svg.style.transform === 'rotate(180deg)';
+        const item = this.closest('.faq-item');
+        const isActive = item.classList.contains('active');
 
         // Close all other FAQs
-        document.querySelectorAll('.faq-question svg').forEach(s => {
-            s.style.transform = 'rotate(0deg)';
+        document.querySelectorAll('.faq-item').forEach(el => {
+            el.classList.remove('active');
         });
 
         // Toggle current FAQ
-        if (!isOpen) {
-            svg.style.transform = 'rotate(180deg)';
+        if (!isActive) {
+            item.classList.add('active');
         }
     });
 });
