@@ -1180,14 +1180,23 @@ section.positioning .trust-badge {
     }
 
     .blog-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: var(--spacing-lg);
+    }
+
+    .blog-card {
+        width: 100% !important;
     }
 
     .nav {
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        position: fixed !important;
+        top: 0 !important;
     }
 }
 
