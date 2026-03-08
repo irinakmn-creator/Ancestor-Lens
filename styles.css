@@ -1153,6 +1153,7 @@ section.positioning .trust-badge {
     .feature-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 24px;
     }
 
     .feature-reverse .feature-content {
