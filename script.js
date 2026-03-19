@@ -157,3 +157,28 @@ function changeLanguage(lang) {
 
 // Make changeLanguage global for the onclick handlers
 window.changeLanguage = changeLanguage;
+
+// --- Blog Slider Logic (Mobile) ---
+const blogGrid = document.querySelector('.blog-grid');
+const dots = document.querySelectorAll('.blog-dots .dot');
+
+if (blogGrid && dots.length > 0) {
+    // Only run if we are on a screen where blogGrid is a slider (CSS handles this)
+    blogGrid.addEventListener('scroll', () => {
+        const index = Math.round(blogGrid.scrollLeft / blogGrid.offsetWidth);
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    });
+
+    // Click on dots to scroll
+    dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-index'));
+            blogGrid.scrollTo({
+                left: index * blogGrid.offsetWidth,
+                behavior: 'smooth'
+            });
+        });
+    });
+}
