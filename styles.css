@@ -86,7 +86,7 @@ h6 {
    =========================== */
 
 .nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -97,6 +97,7 @@ h6 {
 }
 
 .nav.scrolled {
+    position: fixed;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -111,10 +112,29 @@ h6 {
     padding: 1rem 0;
 }
 
+.nav-row-1, .nav-row-2 {
+    display: contents; /* Default for desktop as we use flex on parent */
+}
+
+/* On desktop, Row 2 elements (Links and Actions) are siblings of Row 1 (Logo) */
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.mobile-menu-overlay {
+    display: none;
 }
 
 /* Language Switcher */
@@ -1247,6 +1267,97 @@ section.positioning .trust-badge {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
         position: fixed !important;
         top: 0 !important;
+    }
+
+    .nav-content {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        padding: 12px 0 !important;
+    }
+
+    .nav-row-1, .nav-row-2 {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .nav-row-2 {
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding-top: 10px;
+    }
+
+    .nav-links {
+        display: none !important; /* Hidden in main nav, moved to burger */
+    }
+
+    .burger-menu {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1002;
+    }
+
+    .burger-menu .bar {
+        width: 100%;
+        height: 2px;
+        background: var(--color-dark-green);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .burger-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Mobile Menu Overlay */
+    .mobile-menu-overlay {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-white);
+        z-index: 1001;
+        transform: translateX(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 100px var(--spacing-lg) var(--spacing-lg);
+    }
+
+    .mobile-menu-overlay.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .mobile-menu-content a {
+        font-family: var(--font-serif);
+        font-size: 2rem;
+        color: var(--color-dark-green);
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: 1px solid var(--color-border);
+        padding-bottom: var(--spacing-sm);
     }
 }
 

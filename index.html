@@ -48,16 +48,11 @@
         <nav class="nav">
             <div class="container">
                 <div class="nav-content">
-                    <a href="#" class="logo">
-                        Ancestor Lens
-                    </a>
-                    <div class="nav-links">
-                        <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
-                        <a href="#features" data-i18n="nav-features">Features</a>
-                        <a href="#faq" data-i18n="nav-faq">FAQ</a>
-                        <a href="#blog" data-i18n="nav-blog">Blog</a>
-                    </div>
-                    <div class="nav-actions">
+                    <!-- Row 1: Logo & Language -->
+                    <div class="nav-row-1">
+                        <a href="#" class="logo">
+                            Ancestor Lens
+                        </a>
                         <div class="lang-switcher">
                             <button class="lang-btn" id="langBtn">
                                 <span class="current-lang">EN</span>
@@ -72,9 +67,38 @@
                                 <button onclick="changeLanguage('es')">ES</button>
                             </div>
                         </div>
-                        <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
-                            class="btn btn-primary" data-i18n="nav-download" target="_blank">Download App</a>
                     </div>
+
+                    <!-- Row 2: Burger & Links & Download -->
+                    <div class="nav-row-2">
+                        <button class="burger-menu" id="burgerMenu" aria-label="Toggle Menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                        
+                        <div class="nav-links">
+                            <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
+                            <a href="#features" data-i18n="nav-features">Features</a>
+                            <a href="#faq" data-i18n="nav-faq">FAQ</a>
+                            <a href="#blog" data-i18n="nav-blog">Blog</a>
+                        </div>
+
+                        <div class="nav-actions">
+                            <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                                class="btn btn-primary" data-i18n="nav-download" target="_blank">Download App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Dropdown -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <div class="mobile-menu-content">
+                    <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
+                    <a href="#features" data-i18n="nav-features">Features</a>
+                    <a href="#faq" data-i18n="nav-faq">FAQ</a>
+                    <a href="#blog" data-i18n="nav-blog">Blog</a>
                 </div>
             </div>
         </nav>
@@ -108,13 +132,13 @@
                                         stroke-linecap="round" />
                                 </svg>
                             </a>
-                            <button class="btn btn-secondary btn-large" data-i18n="hero-cta-how">
+                            <a href="#how-it-works" class="btn btn-secondary btn-large" data-i18n="hero-cta-how">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" />
                                     <path d="M8 8L12 10L8 12V8Z" fill="currentColor" />
                                 </svg>
                                 See how it works
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="hero-visual">

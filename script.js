@@ -182,3 +182,23 @@ if (blogGrid && dots.length > 0) {
         });
     });
 }
+// --- Mobile Menu Logic ---
+const burgerMenu = document.getElementById('burgerMenu');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const mobileLinks = document.querySelectorAll('.mobile-menu-content a');
+
+if (burgerMenu && mobileMenuOverlay) {
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        mobileMenuOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+    });
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+}
