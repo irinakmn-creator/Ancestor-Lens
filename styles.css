@@ -1193,6 +1193,20 @@ section.positioning .trust-badge {
         grid-template-columns: 1fr;
     }
 
+    .twin-cards {
+        gap: 12px !important;
+    }
+
+    .twin-card {
+        width: 145px !important;
+        height: 200px !important;
+    }
+
+    .twin-connector {
+        flex-shrink: 0;
+        transform: scale(0.7);
+    }
+
     .step-connector {
         display: none;
     }
