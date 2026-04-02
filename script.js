@@ -202,3 +202,32 @@ if (burgerMenu && mobileMenuOverlay) {
         });
     });
 }
+
+// --- Dynamic Header Download Button Logic ---
+function setDynamicDownloadLink() {
+    const downloadBtn = document.getElementById('headerDownloadBtn');
+    if (!downloadBtn) return;
+
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+    // Simple OS detection
+    const isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    const isAndroid = /android/i.test(userAgent);
+    const isMac = /Macintosh|Mac OS X/i.test(userAgent);
+
+    if (isiOS || isMac) {
+        // iOS or macOS users get Apple App Store link
+        downloadBtn.href = "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587";
+    } else if (isAndroid) {
+        // Android users get Google Play Store link
+        downloadBtn.href = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
+    } else {
+        // Default for Windows/Linux/Other - Link to App Store (often primary) or Google Play
+        downloadBtn.href = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
+    }
+}
+
+// Ensure dynamic link is set on load
+document.addEventListener('DOMContentLoaded', () => {
+    setDynamicDownloadLink();
+});

@@ -52,6 +52,13 @@
                         Ancestor Lens
                     </a>
                     
+                    <div class="nav-links">
+                        <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
+                        <a href="#features" data-i18n="nav-features">Features</a>
+                        <a href="#faq" data-i18n="nav-faq">FAQ</a>
+                        <a href="#blog" data-i18n="nav-blog">Blog</a>
+                    </div>
+
                     <div class="lang-switcher">
                         <button class="lang-btn" id="langBtn">
                             <span class="current-lang">EN</span>
@@ -68,8 +75,9 @@
                     </div>
 
                     <div class="nav-actions">
-                        <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
-                            class="btn btn-primary" data-i18n="nav-download" target="_blank">Download App</a>
+                        <a href="#" id="headerDownloadBtn" class="btn btn-primary btn-sm" target="_blank" data-i18n="nav-download">
+                            Download App
+                        </a>
                     </div>
 
                     <button class="burger-menu" id="burgerMenu" aria-label="Toggle Menu">
@@ -77,13 +85,6 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </button>
-                    
-                    <div class="nav-links">
-                        <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
-                        <a href="#features" data-i18n="nav-features">Features</a>
-                        <a href="#faq" data-i18n="nav-faq">FAQ</a>
-                        <a href="#blog" data-i18n="nav-blog">Blog</a>
-                    </div>
                 </div>
             </div>
             
@@ -119,14 +120,16 @@
                             historical connections
                             through a visual, AI-powered experience — no DNA test required.</p>
                         <div class="hero-cta">
-                            <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
-                                class="btn btn-primary btn-large" target="_blank" data-i18n="hero-cta-ios">
-                                Download on iOS
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M7 10L13 10M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                            </a>
+                            <div class="cta-store-buttons">
+                                <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                                    class="store-btn apple-store btn-large" target="_blank" aria-label="Download on App Store">
+                                    <img src="app-store-badge.png" alt="Download on App Store">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens"
+                                    class="store-btn google-play btn-large" target="_blank" aria-label="Get it on Google Play">
+                                    <img src="google-play-badge.png" alt="Get it on Google Play">
+                                </a>
+                            </div>
                             <a href="#how-it-works" class="btn btn-secondary btn-large" data-i18n="hero-cta-how">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" />
@@ -588,8 +591,16 @@
                     <p data-i18n="cta-p">Join thousands of others exploring their heritage visually. Available on iOS.
                         No
                         DNA required.</p>
-                    <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
-                        class="btn btn-primary btn-large" target="_blank" data-i18n="cta-btn">Download Ancestor Lens</a>
+                    <div class="cta-store-buttons">
+                        <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"
+                            class="store-btn apple-store btn-large" target="_blank" aria-label="Download on App Store">
+                            <img src="app-store-badge.png" alt="Download on App Store">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens"
+                            class="store-btn google-play btn-large" target="_blank" aria-label="Get it on Google Play">
+                            <img src="google-play-badge.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

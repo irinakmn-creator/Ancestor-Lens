@@ -107,9 +107,15 @@ h6 {
 
 .nav-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    gap: var(--spacing-xl);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-right: auto;
 }
 
 .nav-row-1, .nav-row-2 {
@@ -118,15 +124,32 @@ h6 {
 
 /* On desktop, Row 2 elements (Links and Actions) are siblings of Row 1 (Logo) */
 
-.nav-links {
-    display: flex;
-    gap: var(--spacing-lg);
-}
-
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+}
+
+.store-btn {
+    display: inline-block;
+    padding: 0 !important;
+    background: transparent;
+    border: none;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    line-height: 0;
+}
+
+.store-btn:hover {
+    background: transparent;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.store-btn img {
+    display: block;
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
 }
 
 .burger-menu {
@@ -293,6 +316,12 @@ h6 {
     font-size: 1rem;
 }
 
+.btn-sm {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: var(--radius-full);
+}
+
 /* ===========================
    HERO SECTION
    =========================== */
@@ -349,6 +378,17 @@ h6 {
     display: flex;
     gap: var(--spacing-sm);
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.cta-store-buttons {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.store-btn.btn-large img {
+    height: 52px;
 }
 
 /* ===========================
@@ -931,11 +971,48 @@ section.positioning .trust-badge {
 
 .faq-item.active .faq-answer {
     max-height: 500px;
-    /* Adjust as needed */
 }
 
 .faq-item.active .faq-question svg {
     transform: rotate(180deg);
+}
+
+/* ── Blog Table ── */
+.blog-table-container {
+    overflow-x: auto;
+    margin: 40px 0;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+    background: white;
+}
+
+.blog-table th {
+    background: #F4F1EA;
+    padding: 16px 24px;
+    font-weight: 600;
+    color: var(--color-dark-green);
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+.blog-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    color: #444;
+}
+
+.blog-table tr:last-child td {
+    border-bottom: none;
+}
+
+.blog-table tr:hover {
+    background: rgba(0,0,0,0.01);
 }
 
 /* ===========================
@@ -1093,6 +1170,13 @@ section.positioning .trust-badge {
     border-radius: 40px;
     text-align: center;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-content .cta-store-buttons {
+    justify-content: center;
 }
 
 .cta-content h2 {
@@ -1306,8 +1390,24 @@ section.positioning .trust-badge {
     }
 
     .nav-actions {
-        margin-left: auto;
-        gap: 0 !important;
+        display: flex !important;
+        gap: 6px !important;
+    }
+
+    .store-btn {
+        padding: 6px 10px !important;
+        font-size: 11px !important;
+        gap: 4px !important;
+    }
+
+    .store-btn span {
+        display: none; /* Hide text on small screens, keep icons */
+    }
+    
+    @media (min-width: 480px) {
+        .store-btn span {
+            display: inline;
+        }
     }
 
     .nav-actions .btn-primary {
@@ -1322,16 +1422,7 @@ section.positioning .trust-badge {
     }
 
     .burger-menu {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 24px;
-        height: 18px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 1002;
+        display: none !important;
     }
 
     .burger-menu .bar {
@@ -1414,6 +1505,22 @@ section.positioning .trust-badge {
     .hero-cta {
         flex-direction: column;
         width: 100%;
+        align-items: stretch;
+    }
+
+    .cta-store-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-store-buttons .store-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta-store-buttons .store-btn img {
+        height: 48px; /* Slightly smaller for mobile */
     }
 
     .btn {
