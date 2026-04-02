@@ -205,26 +205,31 @@ if (burgerMenu && mobileMenuOverlay) {
 
 // --- Dynamic Header Download Button Logic ---
 function setDynamicDownloadLink() {
-    const downloadBtn = document.getElementById('headerDownloadBtn');
-    if (!downloadBtn) return;
+    // Target all elements with class .btn-dynamic-link
+    const downloadBtns = document.querySelectorAll('.btn-dynamic-link');
+    if (downloadBtns.length === 0) return;
 
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const platform = navigator.platform || '';
     
-    // Simple OS detection
-    const isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+    // Robust iOS detection (covers iPhone, iPad and modern iPadOS)
+    const isiOS = /iPad|iPhone|iPod/.test(userAgent) || 
+                 (/Macintosh/i.test(userAgent) && navigator.maxTouchPoints > 1);
+    
     const isAndroid = /android/i.test(userAgent);
-    const isMac = /Macintosh|Mac OS X/i.test(userAgent);
+    const isMacDesktop = /Macintosh|Mac OS X/i.test(userAgent) && !isiOS;
 
-    if (isiOS || isMac) {
-        // iOS or macOS users get Apple App Store link
-        downloadBtn.href = "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587";
-    } else if (isAndroid) {
-        // Android users get Google Play Store link
-        downloadBtn.href = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
-    } else {
-        // Default for Windows/Linux/Other - Link to App Store (often primary) or Google Play
-        downloadBtn.href = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
+    let targetUrl = "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587"; // Default to iOS
+
+    if (isAndroid) {
+        targetUrl = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
+    } else if (isiOS || isMacDesktop) {
+        targetUrl = "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587";
     }
+
+    downloadBtns.forEach(btn => {
+        btn.href = targetUrl;
+    });
 }
 
 // Ensure dynamic link is set on load
