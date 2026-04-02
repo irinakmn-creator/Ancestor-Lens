@@ -105,18 +105,20 @@ document.querySelectorAll('.value-card').forEach(card => {
 
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.getElementById('langDropdown');
-const currentLangSpan = langBtn.querySelector('.current-lang');
+const currentLangSpan = langBtn ? langBtn.querySelector('.current-lang') : null;
 
 // Toggle dropdown
-langBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    langDropdown.classList.toggle('active');
-});
+if (langBtn && langDropdown) {
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('active');
+    });
 
-// Close dropdown when clicking outside
-document.addEventListener('click', () => {
-    langDropdown.classList.remove('active');
-});
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('active');
+    });
+}
 
 // Initialize language
 document.addEventListener('DOMContentLoaded', () => {
@@ -125,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function changeLanguage(lang) {
-    if (!translations[lang]) return;
+    if (typeof translations === 'undefined' || !translations[lang]) return;
 
     // Update all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
