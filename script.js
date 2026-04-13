@@ -210,34 +210,20 @@ function setDynamicDownloadLink() {
     const downloadBtns = document.querySelectorAll('.btn-dynamic-link');
     if (downloadBtns.length === 0) return;
 
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
-    // iOS detection (iPhone, iPad, iPod, and modern iPadOS which reports as Mac with touch)
-    const isiOS = /iPad|iPhone|iPod/.test(userAgent) || 
-                 (/Macintosh/i.test(userAgent) && navigator.maxTouchPoints > 1);
-    
-    // Android detection
-    const isAndroid = /android/i.test(userAgent);
-
-    // Determine target URL based on platform
     let targetUrl;
     let openInNewTab = true;
 
-    if (isiOS) {
-        // iOS → App Store
-        targetUrl = "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587";
-    } else if (isAndroid) {
-        // Android → Google Play
-        targetUrl = "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens";
-    } else {
-        // Desktop (Chrome, Safari, macOS, Windows, Linux) → anchor to download section
-        // Check if we're on the main page or a blog page
-        const isMainPage = window.location.pathname.endsWith('index.html') || 
-                           window.location.pathname.endsWith('/') ||
-                           window.location.pathname === '';
-        targetUrl = isMainPage ? "#download" : "index.html#download";
-        openInNewTab = false;
-    }
+    // All platforms → anchor to download section
+
+    // Check if we're on the main page or a blog page
+    const isMainPage = window.location.pathname.endsWith('index.html') || 
+                       window.location.pathname.endsWith('/') ||
+                       window.location.pathname === '' ||
+                       window.location.pathname.split('/').pop() === 'index.html';
+    
+    targetUrl = isMainPage ? "#download" : "index.html#download";
+    openInNewTab = false;
+
 
     downloadBtns.forEach(btn => {
         btn.href = targetUrl;
