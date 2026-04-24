@@ -31,7 +31,59 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="translations.js"></script>
+    
+    <!-- JSON-LD SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ancestor Lens",
+      "url": "https://ancestorlens.app/",
+      "logo": "https://ancestorlens.app/logo.png",
+      "sameAs": [
+        "https://www.tiktok.com/@ancestorlens",
+        "https://x.com/AncestorLensApp",
+        "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is Ancestor Lens a DNA test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Ancestor Lens is not a DNA test. It uses advanced AI to analyze historical, cultural, and ancestral patterns instantly within the app — no saliva or lab kits required."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is my data secure with Ancestor Lens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your privacy is a priority. We do not collect DNA, do not sell personal data, and all your information is encrypted. You can delete your data anytime."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Does it require special equipment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No special equipment needed. Everything works directly on your phone through the Ancestor Lens app."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Who can use Ancestor Lens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anyone curious about their heritage, family history, or cultural identity. It is popular among people who enjoy discovering their roots in an interactive and fun way."
+        }
+      }]
+    }
+    </script>
+
     <!-- Clarity Tracking -->
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
@@ -53,10 +105,9 @@
                     </a>
                     
                     <div class="nav-links">
-                        <a href="#how-it-works" data-i18n="nav-how-it-works">How it works</a>
                         <a href="#features" data-i18n="nav-features">Features</a>
                         <a href="#faq" data-i18n="nav-faq">FAQ</a>
-                        <a href="#blog" data-i18n="nav-blog">Blog</a>
+                        <a href="blog.html" data-i18n="nav-blog">Blog</a>
                     </div>
 
                     <div class="lang-switcher">
@@ -93,7 +144,7 @@
                 <div class="mobile-menu-content">
                     <a href="#features" data-i18n="nav-features">Features</a>
                     <a href="#faq" data-i18n="nav-faq">FAQ</a>
-                    <a href="#blog" data-i18n="nav-blog">Blog</a>
+                    <a href="blog.html" data-i18n="nav-blog">Blog</a>
                 </div>
             </div>
 
@@ -148,28 +199,9 @@
                     ancestry, heritage, and
                     identity through visual and cultural patterns. It creates a narrative bridge to your past.</p>
                 <div class="trust-badges">
-                    <div class="trust-badge" data-i18n="pos-badge-dna">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
-                            <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                        No DNA Kit Required
-                    </div>
-                    <div class="trust-badge" data-i18n="pos-badge-instant">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
-                            <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                        Instant Results
-                    </div>
-                    <div class="trust-badge" data-i18n="pos-badge-private">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <rect x="5" y="8" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.5" />
-                            <path d="M7 8V6C7 4.34315 8.34315 3 10 3C11.6569 3 13 4.34315 13 6V8" stroke="currentColor"
-                                stroke-width="1.5" />
-                        </svg>
-                        Private & Secure
-                    </div>
+                    <div class="trust-badge" data-i18n="pos-badge-dna">No DNA Kit Required</div>
+                    <div class="trust-badge" data-i18n="pos-badge-instant">Instant Results</div>
+                    <div class="trust-badge" data-i18n="pos-badge-private">Private & Secure</div>
                 </div>
             </div>
         </section>
@@ -512,67 +544,143 @@
                 <h2 class="blog-main-title" data-i18n="blog-title">Insights & Heritage</h2>
                 <p class="section-subtitle" data-i18n="blog-subtitle">Explore the stories and science behind your roots.
                 </p>
-                <div class="blog-grid">
-                    <a href="blog-curiosity.html" class="blog-card">
-                        <div class="blog-image">
-                            <img src="blog-curiosity.png" alt="Why Are We So Curious About Our Ancestry?">
+                <div class="blog-carousel-container">
+                    <button class="carousel-nav prev" id="blogPrev" aria-label="Previous">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <div class="blog-grid-wrapper">
+                        <div class="blog-grid" id="blogGrid">
+                            <a href="blog-curiosity.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-curiosity.png" alt="Why Are We So Curious About Our Ancestry?">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-1">Psychology</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-1">Why Are We So Curious About Our Ancestry?</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-1">The psychology behind wanting to know your roots and the deep human need for belonging.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
+                            <a href="blog-dna-vs-ai.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-dna-vs-ai.png" alt="DNA Test vs AI Ancestry Analysis">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-2">Science</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-2">DNA Test vs AI Ancestry Analysis: What’s the Difference?</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-2">Understanding the core differences between traditional lab tests and instant AI exploration.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
+                            <a href="blog-identity.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-identity.png" alt="How Your Ancestry Shapes Who You Are">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-3">Heritage</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-3">How Your Ancestry Shapes Who You Are</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-3">Discover how your heritage influences your personality and traits even if you don't realize it.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
+                            <a href="blog-ethnicity-detection.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-ethnicity.png" alt="Can AI Guess Your Ethnicity From a Photo?">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-4">AI Tech</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-4">Can AI Guess Your Ethnicity From a Photo?</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-4">Learn how AI can estimate your ethnicity from a photo and how it works.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
+                            <a href="blog-face-analysis.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-face-analysis.png" alt="What Is AI Face Analysis and How Does It Work?">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-5">Technology</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-5">What Is AI Face Analysis and How Does It Work?</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-5">Discover how AI face analysis works and what it reveals about your identity.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
+                            <a href="blog-origins.html" class="blog-card">
+                                <div class="blog-image">
+                                    <img src="blog-origins.png" alt="What Is My Ancestry? How to Discover Your Origins Today">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-tag" data-i18n="blog-tag-6">Ancestry</div>
+                                    <h3 class="blog-title" data-i18n="blog-h-6">What Is My Ancestry? How to Discover Your Origins Today</h3>
+                                    <p class="blog-excerpt" data-i18n="blog-p-6">Explore different ways to discover your origins, from DNA tests to AI tools.</p>
+                                    <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        </svg></span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="blog-content">
-                            <div class="blog-tag" data-i18n="blog-tag-1">Psychology</div>
-                            <h3 class="blog-title" data-i18n="blog-h-1">Why Are We So Curious About Our Ancestry?</h3>
-                            <p class="blog-excerpt" data-i18n="blog-p-1">The psychology behind wanting to know your
-                                roots
-                                and the deep human need
-                                for belonging.</p>
-                            <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
-                                    height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg></span>
-                        </div>
-                    </a>
-                    <a href="blog-dna-vs-ai.html" class="blog-card">
-                        <div class="blog-image">
-                            <img src="blog-dna-vs-ai.png" alt="DNA Test vs AI Ancestry Analysis">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-tag" data-i18n="blog-tag-2">Science</div>
-                            <h3 class="blog-title" data-i18n="blog-h-2">DNA Test vs AI Ancestry Analysis: What’s the
-                                Difference?</h3>
-                            <p class="blog-excerpt" data-i18n="blog-p-2">Understanding the core differences between
-                                traditional lab tests and
-                                instant AI exploration.</p>
-                            <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
-                                    height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg></span>
-                        </div>
-                    </a>
-                    <a href="blog-identity.html" class="blog-card">
-                        <div class="blog-image">
-                            <img src="blog-identity.png" alt="How Your Ancestry Shapes Who You Are">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-tag" data-i18n="blog-tag-3">Heritage</div>
-                            <h3 class="blog-title" data-i18n="blog-h-3">How Your Ancestry Shapes Who You Are</h3>
-                            <p class="blog-excerpt" data-i18n="blog-p-3">Discover how your heritage influences your
-                                personality and traits even
-                                if you don't realize it.</p>
-                            <span class="blog-link"><span data-i18n="blog-link">Read Article</span> <svg width="16"
-                                    height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg></span>
-                        </div>
-                    </a>
+                    </div>
+
+                    <button class="carousel-nav next" id="blogNext" aria-label="Next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Slider Pagination (Mobile) -->
+                <!-- Slider Pagination -->
                 <div class="blog-dots">
                     <span class="dot active" data-index="0"></span>
                     <span class="dot" data-index="1"></span>
                     <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-origins-section">
+            <div class="container">
+                <h2>Explore Your Origins</h2>
+                <div class="explore-origins-grid">
+                    <a href="blog-ethnicity-detection.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">Can AI Guess Your Ethnicity From a Photo?</span>
+                    </a>
+                    <a href="blog-face-analysis.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">What Is AI Face Analysis and How Does It Work?</span>
+                    </a>
+                    <a href="blog-origins.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">What Is My Ancestry? How to Discover Your Origins</span>
+                    </a>
+                    <a href="blog-dna-vs-ai.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">AI Ancestry vs DNA Tests: What’s the Difference?</span>
+                    </a>
+                    <a href="blog-identity.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">What Does Your Face Say About Your Ancestry?</span>
+                    </a>
+                    <a href="blog-curiosity.html" class="explore-card">
+                        <span class="explore-card-icon">👉</span>
+                        <span class="explore-card-text">Why AI Ancestry Videos Are Going Viral</span>
+                    </a>
                 </div>
             </div>
         </section>

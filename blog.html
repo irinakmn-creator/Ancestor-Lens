@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ancestry, History & AI Discovery | Ancestor Lens</title>
+    <meta name="description"
+        content="Explore our latest articles about ancestry, DNA, AI face analysis, and the psychology of discovering your roots.">
+    <link rel="canonical" href="https://ancestorlens.app/blog.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ancestorlens.app/blog.html">
+    <meta property="og:title" content="Ancestor Lens Blog - Discover Your Story">
+    <meta property="og:description"
+        content="Explore our latest articles about ancestry, DNA, AI face analysis, and the psychology of discovering your roots.">
+    <meta property="og:image" content="https://ancestorlens.app/blog-identity.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .blog-header {
+            padding: 160px 0 80px;
+            background: linear-gradient(to bottom, #FBFBF9, #FFFFFF);
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-family: var(--font-serif);
+            font-size: 3.5rem;
+            color: var(--color-dark-green);
+            margin-bottom: 24px;
+        }
+
+        .blog-header p {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .all-posts {
+            padding: 80px 0 120px;
+        }
+
+        .blog-grid-full {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-grid-full {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid-full {
+                grid-template-columns: 1fr;
+            }
+            .blog-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .blog-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card-image {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 32px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--color-gold);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .blog-card h3 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            line-height: 1.3;
+            color: var(--color-dark-green);
+            margin-bottom: 16px;
+        }
+
+        .blog-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .blog-card-link {
+            margin-top: auto;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-dark-green);
+        }
+    </style>
+
+    <!-- JSON-LD SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Ancestor Lens Blog",
+      "description": "Explore our latest articles about ancestry, DNA, AI face analysis, and the psychology of discovering your roots.",
+      "url": "https://ancestorlens.app/blog.html"
+    }
+    </script>
+
+    <!-- Clarity Tracking -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vlfb2lz6qi");
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">Ancestor Lens</a>
+                    
+                    <div class="nav-links">
+                        <a href="index.html#features" data-i18n="nav-features">Features</a>
+                        <a href="index.html#faq" data-i18n="nav-faq">FAQ</a>
+                        <a href="blog.html" class="active" data-i18n="nav-blog">Blog</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <div class="lang-switcher">
+                            <button class="lang-btn" id="langBtn">
+                                <span class="current-lang">EN</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <button onclick="changeLanguage('en')">EN</button>
+                                <button onclick="changeLanguage('de')">DE</button>
+                                <button onclick="changeLanguage('es')">ES</button>
+                            </div>
+                        </div>
+
+                        <div class="nav-actions-btns">
+                            <a href="index.html#download" class="btn btn-primary btn-sm" data-i18n="nav-download">Download App</a>
+                        </div>
+
+                        <button class="burger-menu" id="burgerMenu" aria-label="Toggle Menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <div class="mobile-menu-content">
+                    <a href="index.html#features" data-i18n="nav-features">Features</a>
+                    <a href="index.html#faq" data-i18n="nav-faq">FAQ</a>
+                    <a href="blog.html" data-i18n="nav-blog">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <div class="container">
+                <h1 data-i18n="all-articles-title">Insights & Heritage</h1>
+                <p data-i18n="all-articles-subtitle">Explore the stories, technology, and science behind your ancestral journey.</p>
+            </div>
+        </section>
+
+        <section class="all-posts">
+            <div class="container">
+                <div class="blog-grid-full">
+                    <!-- Article 1 -->
+                    <a href="blog-curiosity.html" class="blog-card">
+                        <img src="blog-curiosity.png" alt="Psychology of Ancestry" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-1">Psychology</span>
+                            <h3 data-i18n="blog-h-1">Why Are We So Curious About Our Ancestry?</h3>
+                            <p data-i18n="blog-p-1">The psychology behind wanting to know your roots and the deep human need for belonging.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article 2 -->
+                    <a href="blog-dna-vs-ai.html" class="blog-card">
+                        <img src="blog-dna-vs-ai.png" alt="DNA vs AI" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-2">Science</span>
+                            <h3 data-i18n="blog-h-2">DNA Test vs AI Ancestry Analysis: What’s the Difference?</h3>
+                            <p data-i18n="blog-p-2">Understanding the core differences between lab tests and instant AI exploration.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article 3 -->
+                    <a href="blog-identity.html" class="blog-card">
+                        <img src="blog-identity.png" alt="Ancestry and Identity" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-3">Heritage</span>
+                            <h3 data-i18n="blog-h-3">How Your Ancestry Shapes Who You Are</h3>
+                            <p data-i18n="blog-p-3">Discover how your heritage influences your personality and traits even if you don't realize it.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article 4 -->
+                    <a href="blog-ethnicity-detection.html" class="blog-card">
+                        <img src="blog-ethnicity.png" alt="AI Ethnicity Detection" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-4">AI Tech</span>
+                            <h3 data-i18n="blog-h-4">Can AI Guess Your Ethnicity From a Photo?</h3>
+                            <p data-i18n="blog-p-4">Learn how AI can estimate your ethnicity from a photo and how it works.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article 5 -->
+                    <a href="blog-face-analysis.html" class="blog-card">
+                        <img src="blog-face-analysis.png" alt="AI Face Analysis" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-5">Technology</span>
+                            <h3 data-i18n="blog-h-5">What Is AI Face Analysis and How Does It Work?</h3>
+                            <p data-i18n="blog-p-5">Discover how AI face analysis works and what it reveals about your identity.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Article 6 -->
+                    <a href="blog-origins.html" class="blog-card">
+                        <img src="blog-origins.png" alt="Discovering Origins" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag" data-i18n="blog-tag-6">Ancestry</span>
+                            <h3 data-i18n="blog-h-6">What Is My Ancestry? How to Discover Your Origins Today</h3>
+                            <p data-i18n="blog-p-6">Explore different ways to discover your origins, from DNA tests to AI tools.</p>
+                            <div class="blog-card-link">
+                                <span data-i18n="blog-link">Read Article</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7 13L12 8L7 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="download">
+            <div class="container">
+                <h2 data-i18n="cta-h2">Start Your Ancestry Discovery Today</h2>
+                <p data-i18n="cta-p">Join thousands of others exploring their heritage visually. Available on iOS and Android. No DNA required.</p>
+                <div class="cta-store-buttons">
+                    <a href="https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587" class="store-btn apple-store btn-large" target="_blank" aria-label="Download on App Store">
+                        <img src="app-store-badge.png" alt="Download on App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens" class="store-btn google-play btn-large" target="_blank" aria-label="Get it on Google Play">
+                        <img src="google-play-badge.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left" data-i18n="footer-copy">Ancestor Lens © 2024. All rights reserved.</div>
+                <div class="footer-right">
+                    <span class="social-label" data-i18n="footer-social">Follow Us</span>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@ancestorlens" target="_blank">TikTok</a>
+                        <a href="https://x.com/AncestorLensApp" target="_blank">X</a>
+                        <a href="https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA" target="_blank">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

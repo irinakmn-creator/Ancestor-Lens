@@ -145,44 +145,128 @@ function changeLanguage(lang) {
     });
 
     // Update current lang display
-    currentLangSpan.textContent = lang.toUpperCase();
+    if (currentLangSpan) {
+        currentLangSpan.textContent = lang.toUpperCase();
+    }
 
     // Persist choice
     localStorage.setItem('ancestor-lens-lang', lang);
 
     // Update document lang attribute
     document.documentElement.lang = lang;
-
-    // Reset intersection observer entries if needed (optional)
-    // Some translations might change element height, affecting scroll animations
 }
 
 // Make changeLanguage global for the onclick handlers
 window.changeLanguage = changeLanguage;
 
-// --- Blog Slider Logic (Mobile) ---
-const blogGrid = document.querySelector('.blog-grid');
+// --- Blog Carousel Logic ---
+const blogGrid = document.getElementById('blogGrid');
+const blogWrapper = document.querySelector('.blog-grid-wrapper');
+const blogDotsContainer = document.querySelector('.blog-dots');
 const dots = document.querySelectorAll('.blog-dots .dot');
+const prevBtn = document.getElementById('blogPrev');
+const nextBtn = document.getElementById('blogNext');
 
 if (blogGrid && dots.length > 0) {
-    // Only run if we are on a screen where blogGrid is a slider (CSS handles this)
-    blogGrid.addEventListener('scroll', () => {
-        const index = Math.round(blogGrid.scrollLeft / blogGrid.offsetWidth);
+    let currentIndex = 0;
+    const totalItems = 6;
+    const visibleCardsDesktop = 3;
+    const isMobile = () => window.innerWidth <= 968;
+
+    const updateDotsVisibility = () => {
+        if (isMobile()) {
+            dots.forEach(dot => dot.style.display = 'block');
+        } else {
+            // On desktop, we only need dots for indices 0 to (total - visible)
+            dots.forEach((dot, i) => {
+                dot.style.display = i <= (totalItems - visibleCardsDesktop) ? 'block' : 'none';
+            });
+        }
+    };
+
+    const updateCarousel = () => {
+        if (isMobile()) {
+            // Mobile uses native scroll, dots updated via scroll event
+            return;
+        }
+
+        const cardWidth = blogGrid.querySelector('.blog-card').offsetWidth;
+        const gap = parseInt(window.getComputedStyle(blogGrid).gap) || 32;
+        
+        // Ensure index is within bounds
+        const maxIndex = totalItems - visibleCardsDesktop;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const offset = currentIndex * (cardWidth + gap);
+        blogGrid.style.transform = `translateX(-${offset}px)`;
+        
+        // Update dots
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+
+        // Update nav buttons
+        if (prevBtn && nextBtn) {
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= maxIndex;
+        }
+    };
+
+    // Mobile scroll handling
+    blogWrapper.addEventListener('scroll', () => {
+        if (!isMobile()) return;
+        const index = Math.round(blogWrapper.scrollLeft / blogWrapper.offsetWidth);
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === index);
         });
+        currentIndex = index;
     });
 
-    // Click on dots to scroll
+    // Desktop Nav handling
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - visibleCardsDesktop) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+    }
+
+    // Click on dots
     dots.forEach((dot) => {
         dot.addEventListener('click', () => {
             const index = parseInt(dot.getAttribute('data-index'));
-            blogGrid.scrollTo({
-                left: index * blogGrid.offsetWidth,
-                behavior: 'smooth'
-            });
+            
+            if (isMobile()) {
+                currentIndex = index;
+                blogWrapper.scrollTo({
+                    left: index * blogWrapper.offsetWidth,
+                    behavior: 'smooth'
+                });
+            } else {
+                const maxIndex = totalItems - visibleCardsDesktop;
+                currentIndex = Math.min(index, maxIndex);
+                updateCarousel();
+            }
         });
     });
+
+    // Initialize & Listeners
+    window.addEventListener('resize', () => {
+        updateDotsVisibility();
+        updateCarousel();
+    });
+
+    updateDotsVisibility();
+    updateCarousel();
 }
 // --- Mobile Menu Logic ---
 const burgerMenu = document.getElementById('burgerMenu');
