@@ -391,6 +391,113 @@ h6 {
     height: 52px;
 }
 
+/* Privacy Notice */
+.privacy-notice {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.privacy-item.main {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-dark-green);
+    line-height: 1.4;
+}
+
+.privacy-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 24px; /* Align with text after emoji */
+}
+
+.privacy-meta-item {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+@media (min-width: 769px) {
+    .privacy-notice {
+        gap: 2px;
+    }
+
+    .privacy-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0;
+        padding-left: 24px;
+    }
+
+    .privacy-meta-item {
+        font-size: 0.775rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .privacy-meta-item:not(:first-child)::before {
+        content: "·";
+        margin: 0 8px;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+}
+
+/* Final CTA and Blog Post variations */
+.final-cta .privacy-item.main,
+.cta-box .privacy-item.main {
+    color: white;
+}
+
+.final-cta .privacy-meta-item,
+.cta-box .privacy-meta-item {
+    color: white;
+    opacity: 0.8;
+}
+
+.final-cta .privacy-notice,
+.cta-box .privacy-notice {
+    align-items: center;
+    margin-top: 32px;
+}
+
+.final-cta .privacy-meta,
+.cta-box .privacy-meta {
+    padding-left: 0;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .final-cta .privacy-notice,
+    .cta-box .privacy-notice {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-cta {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .privacy-notice {
+        align-items: center;
+    }
+    
+    .privacy-meta {
+        padding-left: 0;
+        align-items: center;
+    }
+}
+
 /* ===========================
    HERO VISUAL
    =========================== */

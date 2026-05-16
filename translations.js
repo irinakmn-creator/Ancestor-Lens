@@ -117,7 +117,11 @@ const translations = {
         "footer-copy": "Ancestor Lens © 2024. All rights reserved.",
         "footer-social": "Follow Us",
         "all-articles-title": "Insights & Heritage",
-        "all-articles-subtitle": "Explore the stories, technology, and science behind your ancestral journey."
+        "all-articles-subtitle": "Explore the stories, technology, and science behind your ancestral journey.",
+        "privacy-title": "Your photo stays private",
+        "privacy-sub-1": "Analyzed instantly",
+        "privacy-sub-2": "Deleted immediately",
+        "privacy-note": "We never store or share your image."
     },
     de: {
         "nav-features": "Funktionen",
@@ -237,7 +241,11 @@ const translations = {
         "footer-copy": "Ancestor Lens © 2024. Alle Rechte vorbehalten.",
         "footer-social": "Folgen Sie uns",
         "all-articles-title": "Einblicke & Erbe",
-        "all-articles-subtitle": "Erkunden Sie die Geschichten, Technologien und Wissenschaften hinter Ihrer ancestralen Reise."
+        "all-articles-subtitle": "Erkunden Sie die Geschichten, Technologien und Wissenschaften hinter Ihrer ancestralen Reise.",
+        "privacy-title": "Ihr Foto bleibt privat",
+        "privacy-sub-1": "Sofort analysiert",
+        "privacy-sub-2": "Direkt gelöscht",
+        "privacy-note": "Wir speichern oder teilen Ihr Bild niemals."
     },
     es: {
         "nav-features": "Características",
@@ -357,6 +365,10 @@ const translations = {
         "footer-copy": "Ancestor Lens © 2024. Todos los derechos reservados.",
         "footer-social": "Síguenos",
         "all-articles-title": "Perspectivas y Patrimonio",
-        "all-articles-subtitle": "Explora las historias, la tecnología y la ciencia detrás de tu viaje ancestral."
+        "all-articles-subtitle": "Explora las historias, la tecnología y la ciencia detrás de tu viaje ancestral.",
+        "privacy-title": "Tu foto sigue siendo privada",
+        "privacy-sub-1": "Analizada al instante",
+        "privacy-sub-2": "Eliminada de inmediato",
+        "privacy-note": "Nunca guardamos ni compartimos tu imagen."
     }
 };
