@@ -169,7 +169,7 @@ const nextBtn = document.getElementById('blogNext');
 
 if (blogGrid && dots.length > 0) {
     let currentIndex = 0;
-    const totalItems = 9;
+    const totalItems = blogGrid.querySelectorAll('.blog-card').length;
     const visibleCardsDesktop = 3;
     const isMobile = () => window.innerWidth <= 968;
 
