@@ -319,7 +319,49 @@ function setDynamicDownloadLink() {
     });
 }
 
+// --- CRO Accordion FAQ & Analytics Interactivity ---
+document.querySelectorAll('.faq-acc-question').forEach(questionBtn => {
+    questionBtn.addEventListener('click', function () {
+        const item = this.closest('.faq-accordion-item');
+        const isActive = item.classList.contains('active');
+
+        // Close all other FAQs for accordion feel
+        document.querySelectorAll('.faq-accordion-item').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        // Toggle current FAQ item
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// Helper function to close mobile navigation overlay
+function closeMobileMenu() {
+    const burgerMenu = document.getElementById('burgerMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    if (burgerMenu && mobileMenuOverlay) {
+        burgerMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+window.closeMobileMenu = closeMobileMenu;
+
+// CRO Analytics Event Tracking Logger
+document.querySelectorAll('[data-cro-event]').forEach(cta => {
+    cta.addEventListener('click', function() {
+        const eventName = this.getAttribute('data-cro-event');
+        console.log(`[CRO Analytics Event]: ${eventName}`);
+        if (window.clarity) {
+            window.clarity("event", eventName);
+        }
+    });
+});
+
 // Ensure dynamic link is set on load
 document.addEventListener('DOMContentLoaded', () => {
     setDynamicDownloadLink();
 });
+

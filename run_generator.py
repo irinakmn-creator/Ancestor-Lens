@@ -127,7 +127,10 @@ header_nav = """<!DOCTYPE html>
         <nav class="nav">
             <div class="container">
                 <div class="nav-content">
-                    <a href="index.html" class="logo">Ancestor Lens</a>
+                    <a href="index.html" class="logo">
+                        <img src="logo.png" alt="Ancestor Lens" class="logo-img">
+                        <span>Ancestor Lens</span>
+                    </a>
                     <div class="nav-links">
                         <a href="index.html#features" data-i18n="nav-features">Features</a>
                         <a href="index.html#faq" data-i18n="nav-faq">FAQ</a>
