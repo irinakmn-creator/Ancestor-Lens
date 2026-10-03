@@ -1804,15 +1804,14 @@ section.positioning .trust-badge:not(:last-child):after {
 
     /* ── Typography ── */
     h1,
-    h2,
-    h3 {
+    h2 {
         font-size: 40px !important;
-        line-height: 1.5 !important;
+        line-height: 1.25 !important;
     }
 
     .hero h1 {
         font-size: 40px !important;
-        line-height: 1.5 !important;
+        line-height: 1.2 !important;
     }
 
     /* ── Cards grid ── */
@@ -1912,6 +1911,35 @@ section.positioning .trust-badge:not(:last-child):after {
     color: var(--color-gold);
     font-family: var(--font-serif);
     font-style: italic;
+}
+
+/* ── Section Titles & Blog Headings (40px) ── */
+.section-header h2,
+section h2,
+.final-cta-content h2,
+.how-it-works h2,
+.feature-text h2,
+.emotional-section h2,
+.explore-origins-section h2,
+.cta-content h2,
+.blog-seo-section h2,
+.blog-header h1,
+.blog-main-title,
+.post-title,
+.post-content h2,
+.cta h2 {
+    font-size: 40px !important;
+    font-family: var(--font-serif);
+    line-height: 1.25 !important;
+}
+
+.section-header h2 {
+    color: var(--color-dark-green);
+    margin-bottom: 0.75rem;
+}
+
+.final-cta-content h2 {
+    color: #FFFFFF !important;
 }
 
 .section-eyebrow {
@@ -2748,7 +2776,7 @@ section.positioning .trust-badge:not(:last-child):after {
 
 .final-cta-content h2 {
     color: #FFFFFF;
-    font-size: 2.75rem;
+    font-size: 40px;
     margin-bottom: 1rem;
 }
 
@@ -2925,65 +2953,6 @@ section.positioning .trust-badge:not(:last-child):after {
     color: #A0AEC0;
 }
 
-/* ── Mobile Sticky Install Bar ── */
-.sticky-mobile-cta {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-top: 1px solid #EAE6DF;
-    padding: 0.75rem 1rem;
-    z-index: 999;
-    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.sticky-cta-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 480px;
-    margin: 0 auto;
-}
-
-.sticky-app-info {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.sticky-logo-icon {
-    font-size: 1.25rem;
-}
-
-.sticky-logo-img {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    object-fit: contain;
-    flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.sticky-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.app-title {
-    font-weight: 700;
-    font-size: 0.875rem;
-    color: var(--color-dark-green);
-}
-
-.app-sub {
-    font-size: 0.6875rem;
-    color: #718096;
-}
-
 /* ── Responsive Viewport Adjustments (Mobile 390px & Tablet) ── */
 @media (max-width: 1024px) {
     .story-block {
@@ -3040,9 +3009,5 @@ section.positioning .trust-badge:not(:last-child):after {
 
     .blog-preview-grid {
         grid-template-columns: 1fr;
-    }
-
-    .sticky-mobile-cta {
-        display: block;
     }
 }

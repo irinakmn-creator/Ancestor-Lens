@@ -95,7 +95,7 @@ header_nav = """<!DOCTYPE html>
         .post-visual { width: 100%; aspect-ratio: 21/9; background: #F4F1EA; border-radius: 24px; margin-bottom: 60px; overflow: hidden; }
         .post-content { max-width: 700px; margin: 0 auto; font-size: 1.125rem; line-height: 1.8; color: #333; }
         .post-content p { margin-bottom: 24px; }
-        .post-content h2 { font-family: var(--font-serif); font-size: 2.25rem; color: var(--color-dark-green); margin: 48px 0 24px; }
+        .post-content h2 { font-family: var(--font-serif); font-size: 40px; color: var(--color-dark-green); margin: 48px 0 24px; }
         .post-content h3 { font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-dark-green); margin: 32px 0 16px; }
         .post-content ul { margin: 0 0 24px 24px; }
         .post-content ul li { margin-bottom: 8px; }

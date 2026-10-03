@@ -153,11 +153,11 @@
                     </div>
 
                     <div class="nav-actions">
-                        <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" 
+                        <a href="#download" 
                            id="headerDownloadBtn" 
                            class="btn btn-primary btn-sm btn-dynamic-link" 
-                           target="_blank" 
-                           data-cro-event="header_app_store_click">
+                           data-cro-event="header_app_store_click"
+                           data-i18n="nav-download">
                             Download App
                         </a>
                     </div>
@@ -178,11 +178,12 @@
                     <a href="#features" onclick="closeMobileMenu()">Features</a>
                     <a href="#privacy" onclick="closeMobileMenu()">Privacy</a>
                     <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
-                    <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" 
-                       class="btn btn-primary btn-block" 
-                       target="_blank"
-                       data-cro-event="mobile_menu_app_store_click">
-                        Download on App Store
+                    <a href="#download" 
+                       onclick="closeMobileMenu()"
+                       class="btn btn-primary btn-block btn-dynamic-link" 
+                       data-cro-event="mobile_menu_app_store_click"
+                       data-i18n="nav-download">
+                        Download App
                     </a>
                 </div>
             </div>
@@ -371,13 +372,12 @@
                 </div>
 
                 <div class="result-cta-block">
-                    <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" 
-                       class="btn btn-primary btn-lg" 
-                       target="_blank"
+                    <a href="#download" 
+                       class="btn btn-primary btn-lg btn-dynamic-link" 
                        data-cro-event="result_app_store_click">
                         See Yours in Ancestor Lens
                     </a>
-                    <span class="cta-micro-note">No subscription required · Download free on the App Store</span>
+                    <span class="cta-micro-note">No subscription required · Available on iOS and Android</span>
                 </div>
             </div>
         </section>
@@ -621,11 +621,11 @@
                 </div>
 
                 <div class="reviews-cta-center">
-                    <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" 
-                       class="btn btn-primary btn-md" 
-                       target="_blank"
-                       data-cro-event="reviews_app_store_click">
-                        Download on the App Store
+                    <a href="#download" 
+                       class="btn btn-primary btn-md btn-dynamic-link" 
+                       data-cro-event="reviews_app_store_click"
+                       data-i18n="nav-download">
+                        Download App
                     </a>
                 </div>
             </div>
@@ -897,7 +897,9 @@
 
                 <div class="footer-links-group">
                     <h4>Download</h4>
-                    <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" target="_blank">iOS App Store</a>
+                    <a href="#download" class="btn-dynamic-link" data-i18n="nav-download">Download App</a>
+                    <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" target="_blank">Apple App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens" target="_blank">Google Play</a>
                     <span class="footer-note">Free download · No subscriptions</span>
                 </div>
 
@@ -928,25 +930,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- MOBILE STICKY INSTALL CTA BAR -->
-    <div class="sticky-mobile-cta" id="stickyMobileCta">
-        <div class="sticky-cta-inner">
-            <div class="sticky-app-info">
-                <img src="logo.png" alt="Ancestor Lens" class="sticky-logo-img">
-                <div class="sticky-text">
-                    <span class="app-title">Ancestor Lens</span>
-                    <span class="app-sub">No Subscription · Free Download</span>
-                </div>
-            </div>
-            <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587" 
-               class="btn btn-primary btn-sm" 
-               target="_blank"
-               data-cro-event="sticky_mobile_app_store_click">
-                Download
-            </a>
-        </div>
-    </div>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

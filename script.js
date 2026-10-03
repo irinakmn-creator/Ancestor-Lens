@@ -294,30 +294,30 @@ function setDynamicDownloadLink() {
     const downloadBtns = document.querySelectorAll('.btn-dynamic-link');
     if (downloadBtns.length === 0) return;
 
-    let targetUrl;
-    let openInNewTab = true;
-
-    // All platforms → anchor to download section
-
-    // Check if we're on the main page or a blog page
-    const isMainPage = window.location.pathname.endsWith('index.html') || 
-                       window.location.pathname.endsWith('/') ||
-                       window.location.pathname === '' ||
-                       window.location.pathname.split('/').pop() === 'index.html';
-    
-    targetUrl = isMainPage ? "#download" : "index.html#download";
-    openInNewTab = false;
-
+    // If current page contains the #download section (e.g. index.html or blog.html), anchor directly
+    const hasDownloadSection = !!document.getElementById('download');
+    const targetUrl = hasDownloadSection ? "#download" : "index.html#download";
 
     downloadBtns.forEach(btn => {
         btn.href = targetUrl;
-        if (openInNewTab) {
-            btn.setAttribute('target', '_blank');
-        } else {
-            btn.removeAttribute('target');
-        }
+        btn.removeAttribute('target');
     });
 }
+
+// Smooth scroll handler for all download button links pointing to #download
+document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href="#download"]');
+    if (link) {
+        const downloadSection = document.getElementById('download');
+        if (downloadSection) {
+            e.preventDefault();
+            downloadSection.scrollIntoView({ behavior: 'smooth' });
+            if (window.history && window.history.pushState) {
+                window.history.pushState(null, '', '#download');
+            }
+        }
+    }
+});
 
 // --- CRO Accordion FAQ & Analytics Interactivity ---
 document.querySelectorAll('.faq-acc-question').forEach(questionBtn => {
