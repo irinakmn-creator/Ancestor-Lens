@@ -327,6 +327,28 @@ h6 {
     background: var(--color-white);
 }
 
+.btn-google-play {
+    background: #FFFFFF;
+    color: var(--color-dark-green);
+    border: 1px solid rgba(26, 60, 52, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-google-play:hover {
+    background: var(--color-dark-green);
+    color: #FFFFFF;
+    border-color: var(--color-dark-green);
+    transform: translateY(-1px);
+}
+
+.btn-google-play svg {
+    flex-shrink: 0;
+}
+
 .btn-large {
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -1741,7 +1763,16 @@ section.positioning .trust-badge:not(:last-child):after {
     }
 
     .burger-menu {
-        display: none !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1002;
     }
 
     .burger-menu .bar {
@@ -1777,6 +1808,7 @@ section.positioning .trust-badge:not(:last-child):after {
         transform: translateX(-100%);
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         padding: 100px var(--spacing-lg) var(--spacing-lg);
+        overflow-y: auto;
     }
 
     .mobile-menu-overlay.active {
@@ -1786,32 +1818,48 @@ section.positioning .trust-badge:not(:last-child):after {
     .mobile-menu-content {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
     }
 
     .mobile-menu-content a {
         font-family: var(--font-serif);
-        font-size: 2rem;
+        font-size: 1.75rem;
         color: var(--color-dark-green);
         text-decoration: none;
         font-weight: 600;
         border-bottom: 1px solid var(--color-border);
         padding-bottom: var(--spacing-sm);
     }
+
+    .mobile-menu-content a.btn {
+        font-family: var(--font-sans);
+        font-size: 1rem;
+        border-bottom: none;
+        padding: 0.85rem 1.5rem;
+        text-align: center;
+        margin-top: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 640px) {
 
     /* ── Typography ── */
-    h1,
-    h2 {
-        font-size: 40px !important;
-        line-height: 1.25 !important;
-    }
-
-    .hero h1 {
+    .hero-title,
+    .hero h1,
+    h1 {
         font-size: 40px !important;
         line-height: 1.2 !important;
+    }
+
+    .section-header h2,
+    section h2,
+    h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
     }
 
     /* ── Cards grid ── */
@@ -2965,8 +3013,27 @@ section h2,
 }
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.25rem !important;
+    /* Hero Title on Mobile: 40px */
+    .hero-title,
+    .hero h1 {
+        font-size: 40px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Section Headings on Mobile: 24px */
+    .section-header h2,
+    section h2,
+    .final-cta-content h2,
+    .how-it-works h2,
+    .feature-text h2,
+    .emotional-section h2,
+    .explore-origins-section h2,
+    .cta-content h2,
+    .blog-seo-section h2,
+    .cta h2,
+    .post-content h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
     }
 
     .visual-result-journey {
