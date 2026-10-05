@@ -30,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -133,8 +134,6 @@
                         <a href="#how-it-works" data-i18n="nav-how">How It Works</a>
                         <a href="#results-preview" data-i18n="nav-results">Your Results</a>
                         <a href="#features" data-i18n="nav-features">Features</a>
-                        <a href="#privacy" data-i18n="nav-privacy">Privacy</a>
-                        <a href="#faq" data-i18n="nav-faq">FAQ</a>
                         <a href="blog.html" data-i18n="nav-blog">Blog</a>
                     </div>
 
@@ -189,8 +188,6 @@
                     <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
                     <a href="#results-preview" onclick="closeMobileMenu()">Your Results</a>
                     <a href="#features" onclick="closeMobileMenu()">Features</a>
-                    <a href="#privacy" onclick="closeMobileMenu()">Privacy</a>
-                    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
                     <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav-blog">Blog</a>
                     <a href="#download" 
                        onclick="closeMobileMenu()"
@@ -233,13 +230,23 @@
                         </p>
                         
                         <div class="hero-cta-area">
-                            <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587"
-                                class="store-badge-btn" 
-                                target="_blank" 
-                                aria-label="Download Free on the App Store"
-                                data-cro-event="hero_app_store_click">
-                                <img src="app-store-badge.png" alt="Download Free on the App Store">
-                            </a>
+                            <div class="hero-store-actions">
+                                <a href="https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587"
+                                    class="store-badge-btn"
+                                    target="_blank"
+                                    aria-label="Download Free on the App Store"
+                                    data-cro-event="hero_app_store_click">
+                                    <img src="app-store-badge.png" alt="Download Free on the App Store" width="240" height="80">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens"
+                                    class="store-badge-btn"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Get it on Google Play"
+                                    data-cro-event="hero_google_play_click">
+                                    <img src="google-play-badge.png" alt="Get it on Google Play" width="240" height="80">
+                                </a>
+                            </div>
 
                             <div class="hero-trust-microcopy">
                                 <div class="trust-line-primary">
@@ -261,7 +268,7 @@
                             <div class="result-demo-card">
                                 <div class="demo-badge">REALTIME RESULT PREVIEW</div>
                                 <div class="demo-image-wrapper">
-                                    <img src="hero-visual.png" alt="Ancestor Lens App AI Analysis Demo" class="demo-main-img">
+                                    <img src="hero-visual.png" alt="Ancestor Lens App AI Analysis Demo" class="demo-main-img" width="1493" height="2688" fetchpriority="high">
                                     <div class="scan-line-effect"></div>
                                 </div>
                                 <div class="demo-meta-pill">

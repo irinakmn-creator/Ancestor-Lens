@@ -1,25 +1,27 @@
 // Navigation scroll effect
 const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
+function updateNavigation() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
+}
+window.addEventListener('scroll', updateNavigation, { passive: true });
+updateNavigation();
+
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const hash = this.getAttribute('href');
+        const target = hash === '#' ? document.body : document.getElementById(hash.slice(1));
+        if (!target) return;
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
+        closeMobileMenu();
+        const headerHeight = nav ? nav.getBoundingClientRect().height : 0;
+        window.scrollTo({
+            top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - headerHeight - 16),
+            behavior: reducedMotion.matches ? 'instant' : 'smooth'
+        });
+        if (hash !== '#') window.history.replaceState(null, '', hash);
     });
 });
 
@@ -139,7 +141,9 @@ function changeLanguage(lang) {
             if (key.includes('title') || key.includes('h2') || key.includes('badge') || key.includes('emo-h2')) {
                 el.innerHTML = translation;
             } else {
-                el.textContent = translation;
+                const label = el.querySelector('span');
+                if (label && el.querySelector('svg')) label.textContent = translation;
+                else el.textContent = translation;
             }
         }
     });
@@ -271,21 +275,87 @@ if (blogGrid && dots.length > 0) {
 // --- Mobile Menu Logic ---
 const burgerMenu = document.getElementById('burgerMenu');
 const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-const mobileLinks = document.querySelectorAll('.mobile-menu-content a');
+const mobileNavigation = window.matchMedia('(max-width: 1200px)');
+let savedBodyOverflow = '';
+const backgroundInertStates = new Map();
+
+function closeMobileMenu(restoreFocus = false) {
+    if (!burgerMenu || !mobileMenuOverlay) return;
+    const wasOpen = mobileMenuOverlay.classList.contains('active');
+    burgerMenu.classList.remove('active');
+    burgerMenu.setAttribute('aria-expanded', 'false');
+    mobileMenuOverlay.classList.remove('active');
+    mobileMenuOverlay.inert = true;
+    mobileMenuOverlay.setAttribute('aria-hidden', 'true');
+    if (wasOpen) {
+        document.body.style.overflow = savedBodyOverflow;
+        backgroundInertStates.forEach((wasInert, el) => { el.inert = wasInert; });
+        backgroundInertStates.clear();
+        if (restoreFocus) burgerMenu.focus();
+    }
+}
+window.closeMobileMenu = closeMobileMenu;
 
 if (burgerMenu && mobileMenuOverlay) {
+    burgerMenu.setAttribute('aria-controls', mobileMenuOverlay.id);
+    burgerMenu.setAttribute('aria-expanded', 'false');
+    mobileMenuOverlay.setAttribute('aria-label', 'Mobile navigation');
+    closeMobileMenu();
+
+    // Older article templates also need their download action inside the menu.
+    const menuContent = mobileMenuOverlay.querySelector('.mobile-menu-content');
+    if (menuContent && !menuContent.querySelector('.btn')) {
+        document.querySelectorAll('.nav-actions-btns .btn').forEach(button => {
+            const menuButton = button.cloneNode(true);
+            menuButton.removeAttribute('id');
+            menuContent.appendChild(menuButton);
+        });
+    }
+
     burgerMenu.addEventListener('click', () => {
-        burgerMenu.classList.toggle('active');
-        mobileMenuOverlay.classList.toggle('active');
-        document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+        if (mobileMenuOverlay.classList.contains('active')) {
+            closeMobileMenu(true);
+            return;
+        }
+        savedBodyOverflow = document.body.style.overflow;
+        document.querySelectorAll('main, body > footer').forEach(el => {
+            backgroundInertStates.set(el, el.inert);
+            el.inert = true;
+        });
+        burgerMenu.classList.add('active');
+        burgerMenu.setAttribute('aria-expanded', 'true');
+        mobileMenuOverlay.inert = false;
+        mobileMenuOverlay.setAttribute('aria-hidden', 'false');
+        mobileMenuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        mobileMenuOverlay.querySelector('a')?.focus();
     });
 
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            burgerMenu.classList.remove('active');
-            mobileMenuOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+    mobileMenuOverlay.addEventListener('click', e => {
+        if (e.target.closest('a')) closeMobileMenu(true);
+    });
+
+    document.addEventListener('keydown', e => {
+        if (!mobileMenuOverlay.classList.contains('active')) return;
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            closeMobileMenu(true);
+        }
+        if (e.key === 'Tab') {
+            const links = [...mobileMenuOverlay.querySelectorAll('a[href], button')];
+            const lastLink = links[links.length - 1];
+            if (e.shiftKey && document.activeElement === burgerMenu) {
+                e.preventDefault();
+                lastLink?.focus();
+            } else if (!e.shiftKey && document.activeElement === lastLink) {
+                e.preventDefault();
+                burgerMenu.focus();
+            }
+        }
+    });
+
+    mobileNavigation.addEventListener('change', e => {
+        if (!e.matches) closeMobileMenu();
     });
 }
 
@@ -304,23 +374,12 @@ function setDynamicDownloadLink() {
     });
 }
 
-// Smooth scroll handler for all download button links pointing to #download
-document.addEventListener('click', function(e) {
-    const link = e.target.closest('a[href="#download"]');
-    if (link) {
-        const downloadSection = document.getElementById('download');
-        if (downloadSection) {
-            e.preventDefault();
-            downloadSection.scrollIntoView({ behavior: 'smooth' });
-            if (window.history && window.history.pushState) {
-                window.history.pushState(null, '', '#download');
-            }
-        }
-    }
-});
-
 // --- CRO Accordion FAQ & Analytics Interactivity ---
-document.querySelectorAll('.faq-acc-question').forEach(questionBtn => {
+document.querySelectorAll('.faq-acc-question').forEach((questionBtn, index) => {
+    const answer = questionBtn.closest('.faq-accordion-item').querySelector('.faq-acc-answer');
+    answer.id = answer.id || `faq-answer-${index + 1}`;
+    questionBtn.setAttribute('aria-controls', answer.id);
+    questionBtn.setAttribute('aria-expanded', questionBtn.closest('.faq-accordion-item').classList.contains('active'));
     questionBtn.addEventListener('click', function () {
         const item = this.closest('.faq-accordion-item');
         const isActive = item.classList.contains('active');
@@ -328,26 +387,16 @@ document.querySelectorAll('.faq-acc-question').forEach(questionBtn => {
         // Close all other FAQs for accordion feel
         document.querySelectorAll('.faq-accordion-item').forEach(el => {
             el.classList.remove('active');
+            el.querySelector('.faq-acc-question').setAttribute('aria-expanded', 'false');
         });
 
         // Toggle current FAQ item
         if (!isActive) {
             item.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
         }
     });
 });
-
-// Helper function to close mobile navigation overlay
-function closeMobileMenu() {
-    const burgerMenu = document.getElementById('burgerMenu');
-    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-    if (burgerMenu && mobileMenuOverlay) {
-        burgerMenu.classList.remove('active');
-        mobileMenuOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-}
-window.closeMobileMenu = closeMobileMenu;
 
 // CRO Analytics Event Tracking Logger
 document.querySelectorAll('[data-cro-event]').forEach(cta => {
@@ -364,4 +413,3 @@ document.querySelectorAll('[data-cro-event]').forEach(cta => {
 document.addEventListener('DOMContentLoaded', () => {
     setDynamicDownloadLink();
 });
-
