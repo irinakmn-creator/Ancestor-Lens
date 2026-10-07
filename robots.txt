@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ancestorlens.app/sitemap.xml
+Sitemap: https://ancestor-lens.com/sitemap.xml

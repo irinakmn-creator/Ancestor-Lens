@@ -10,21 +10,21 @@ header_nav = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{meta_title}</title>
     <meta name="description" content="{meta_description}">
-    <link rel="canonical" href="https://ancestorlens.app/{url}">
+    <link rel="canonical" href="https://ancestor-lens.com/{url}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ancestorlens.app/{url}">
+    <meta property="og:url" content="https://ancestor-lens.com/{url}">
     <meta property="og:title" content="{meta_title}">
     <meta property="og:description" content="{meta_description}">
-    <meta property="og:image" content="https://ancestorlens.app/{image}">
+    <meta property="og:image" content="https://ancestor-lens.com/{image}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ancestorlens.app/{url}">
+    <meta property="twitter:url" content="https://ancestor-lens.com/{url}">
     <meta property="twitter:title" content="{meta_title}">
     <meta property="twitter:description" content="{meta_description}">
-    <meta property="twitter:image" content="https://ancestorlens.app/{image}">
+    <meta property="twitter:image" content="https://ancestor-lens.com/{image}">
 
     <!-- JSON-LD Article Schema -->
     <script type="application/ld+json">
@@ -33,7 +33,7 @@ header_nav = """<!DOCTYPE html>
       "@type": "BlogPosting",
       "headline": "{meta_title}",
       "description": "{meta_description}",
-      "image": "https://ancestorlens.app/{image}",
+      "image": "https://ancestor-lens.com/{image}",
       "author": {
         "@type": "Organization",
         "name": "Ancestor Lens Editorial Team"
@@ -43,14 +43,14 @@ header_nav = """<!DOCTYPE html>
         "name": "Ancestor Lens",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://ancestorlens.app/logo.jpg"
+          "url": "https://ancestor-lens.com/logo.jpg"
         }
       },
       "datePublished": "2026-07-10",
       "dateModified": "2026-07-10",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://ancestorlens.app/{url}"
+        "@id": "https://ancestor-lens.com/{url}"
       },
       "keywords": "{keywords}"
     }
@@ -65,12 +65,12 @@ header_nav = """<!DOCTYPE html>
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://ancestorlens.app/index.html"
+        "item": "https://ancestor-lens.com/index.html"
       },{
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://ancestorlens.app/blog.html"
+        "item": "https://ancestor-lens.com/blog.html"
       },{
         "@type": "ListItem",
         "position": 3,

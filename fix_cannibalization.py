@@ -4,22 +4,22 @@ MERGES = [
     {
         "canonical": "blog-what-nationality-look-like.html",
         "deprecated": "blog-what-nationality-i-look-like.html",
-        "canonical_url": "https://ancestorlens.app/blog-what-nationality-look-like.html",
+        "canonical_url": "https://ancestor-lens.com/blog-what-nationality-look-like.html",
     },
     {
         "canonical": "blog-ai-vs-dna.html",
         "deprecated": "blog-dna-vs-ai.html",
-        "canonical_url": "https://ancestorlens.app/blog-ai-vs-dna.html",
+        "canonical_url": "https://ancestor-lens.com/blog-ai-vs-dna.html",
     },
     {
         "canonical": "blog-heritage-no-dna.html",
         "deprecated": "blog-ancestry-without-dna.html",
-        "canonical_url": "https://ancestorlens.app/blog-heritage-no-dna.html",
+        "canonical_url": "https://ancestor-lens.com/blog-heritage-no-dna.html",
     },
     {
         "canonical": "blog-roots-psychology.html",
         "deprecated": "blog-curiosity.html",
-        "canonical_url": "https://ancestorlens.app/blog-roots-psychology.html",
+        "canonical_url": "https://ancestor-lens.com/blog-roots-psychology.html",
     },
 ]
 
