@@ -7,7 +7,7 @@
   </url>
   <url>
     <loc>https://ancestor-lens.com/blog.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -289,5 +289,23 @@
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ancestor-lens.com/blog-autosomal-dna-vs-y-dna-vs-mtdna.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ancestor-lens.com/blog-how-to-find-female-ancestor-maiden-name.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ancestor-lens.com/blog-what-is-a-second-cousin.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
