@@ -40,14 +40,14 @@ header_nav = """<!DOCTYPE html>
       "author": {{
         "@type": "Organization",
         "name": "Ancestor Lens Editorial Team",
-        "url": "https://ancestor-lens.com/about.html"
+        "url": "https://ancestor-lens.com/"
       }},
       "publisher": {{
         "@type": "Organization",
         "name": "Ancestor Lens",
         "logo": {{
           "@type": "ImageObject",
-          "url": "https://ancestor-lens.com/images/logo.png"
+          "url": "https://ancestor-lens.com/logo.png"
         }}
       }},
       "mainEntityOfPage": {{

@@ -1,0 +1,182 @@
+[
+  {
+    "file": "index.html",
+    "width": 320,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "lcp": 348,
+    "cls": 0.002290528549382716,
+    "hero": "http://127.0.0.1:4181/hero-visual-600.webp",
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 320,
+    "h1": "Insights & Heritage",
+    "overflow": 0,
+    "lcp": 204,
+    "cls": 0.028521993152006174,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "lcp": 232,
+    "cls": 0.0030342820117125672,
+    "hero": "http://127.0.0.1:4181/hero-visual-600.webp",
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 390,
+    "h1": "Insights & Heritage",
+    "overflow": 0,
+    "lcp": 208,
+    "cls": 0.06872252492877493,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 390,
+    "h1": "What Nationality Do I Look Like? A Guide to Visual Resemblance",
+    "overflow": 0,
+    "lcp": 200,
+    "cls": 0.002523062183444128,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 390,
+    "h1": "What Ethnicity Do I Look Like? Reading a Visual Heritage Result",
+    "overflow": 0,
+    "lcp": 208,
+    "cls": 0.007040086855017411,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 390,
+    "h1": "AI Face Ethnicity Test: How to Use and Read Photo Results",
+    "overflow": 0,
+    "lcp": 220,
+    "cls": 0.0030390437044950937,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 390,
+    "h1": "How Accurate Are AI Ethnicity Tests? What a Photo Cannot Prove",
+    "overflow": 0,
+    "lcp": 192,
+    "cls": 0.009103871874010764,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "lcp": 224,
+    "cls": 0.015411752507716049,
+    "hero": "http://127.0.0.1:4181/hero-visual-900.webp",
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 768,
+    "h1": "Insights & Heritage",
+    "overflow": 0,
+    "lcp": 204,
+    "cls": 0.002215704169881687,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "lcp": 208,
+    "cls": 0.06835148252636318,
+    "hero": "http://127.0.0.1:4181/hero-visual-900.webp",
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 1440,
+    "h1": "Insights & Heritage",
+    "overflow": 0,
+    "lcp": 172,
+    "cls": 0.002091004439407579,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 1440,
+    "h1": "What Nationality Do I Look Like? A Guide to Visual Resemblance",
+    "overflow": 0,
+    "lcp": 188,
+    "cls": 0.0019102992681809413,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 1440,
+    "h1": "What Ethnicity Do I Look Like? Reading a Visual Heritage Result",
+    "overflow": 0,
+    "lcp": 168,
+    "cls": 0.002267791321051955,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 1440,
+    "h1": "AI Face Ethnicity Test: How to Use and Read Photo Results",
+    "overflow": 0,
+    "lcp": 168,
+    "cls": 0.003841769798498585,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 1440,
+    "h1": "How Accurate Are AI Ethnicity Tests? What a Photo Cannot Prove",
+    "overflow": 0,
+    "lcp": 172,
+    "cls": 0.004539428334177276,
+    "clarityLoads": 1,
+    "badImages": [],
+    "errors": []
+  }
+]

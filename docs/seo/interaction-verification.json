@@ -1,0 +1,66 @@
+[
+  {
+    "width": 320,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "hero": "http://127.0.0.1:4181/hero-visual-600.webp"
+  },
+  {
+    "width": 390,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "hero": "http://127.0.0.1:4181/hero-visual-600.webp"
+  },
+  {
+    "width": 1440,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "overflow": 0,
+    "hero": "http://127.0.0.1:4181/hero-visual-900.webp"
+  },
+  {
+    "query": "",
+    "ref": "https://www.google.com/",
+    "events": [
+      [
+        "event",
+        "search_landing_view__blog-ai-face-ethnicity-test"
+      ]
+    ]
+  },
+  {
+    "query": "?gclid=test",
+    "ref": "https://www.google.com/",
+    "events": []
+  },
+  {
+    "query": "?utm_medium=cpc",
+    "ref": "https://www.google.com/",
+    "events": []
+  },
+  {
+    "query": "",
+    "ref": "https://example.com/",
+    "events": []
+  },
+  {
+    "middleClick": [
+      [
+        "event",
+        "app_store_click__blog-ai-face-ethnicity-test__article_intro"
+      ]
+    ]
+  },
+  {
+    "noJS": true,
+    "h1": "AI Face Ancestry Test — Explore Your Heritage From a Photo",
+    "priorityLinks": [
+      "blog-how-accurate-ai-ethnicity-test.html",
+      "blog-ai-face-ethnicity-test.html",
+      "blog-what-ethnicity-i-look-like.html",
+      "blog-what-nationality-look-like.html"
+    ]
+  },
+  {
+    "storageDisabledErrors": []
+  }
+]

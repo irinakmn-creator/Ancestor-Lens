@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "images/app-store-heritage-map.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8e/f1/88/8ef18893-efb1-3099-48ab-55e70a51ad67/121280.png/600x1300bb.jpg",
+    "listing": "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+    "checked": "2026-10-13",
+    "type": "Publisher-provided promotional screenshot with app UI; not a recreated or independently verified live result",
+    "transformation": "JPEG-to-WebP compression, no content alteration"
+  },
+  {
+    "asset": "images/app-store-roots-match.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/df/c8/89/dfc88984-9ef3-edf9-c9cf-ea92ecb7fa17/121282.png/600x1300bb.jpg",
+    "listing": "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+    "checked": "2026-10-13",
+    "type": "Publisher-provided promotional screenshot with app UI; not a recreated or independently verified live result",
+    "transformation": "JPEG-to-WebP compression, no content alteration"
+  },
+  {
+    "asset": "images/app-store-historical-twin.webp",
+    "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/7a/39/827a39d9-120c-b6b1-dc3a-4cf181fc0521/121281.png/600x1300bb.jpg",
+    "listing": "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+    "checked": "2026-10-13",
+    "type": "Publisher-provided promotional screenshot with app UI; not a recreated or independently verified live result",
+    "transformation": "JPEG-to-WebP compression, no content alteration"
+  }
+]

@@ -124,7 +124,8 @@ if (langBtn && langDropdown) {
 
 // Initialize language
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('ancestor-lens-lang') || 'en';
+    let savedLang = 'en';
+    try { savedLang = localStorage.getItem('ancestor-lens-lang') || 'en'; } catch (_) { /* Storage may be disabled. */ }
     changeLanguage(savedLang);
 });
 
@@ -154,10 +155,12 @@ function changeLanguage(lang) {
     }
 
     // Persist choice
-    localStorage.setItem('ancestor-lens-lang', lang);
+    try { localStorage.setItem('ancestor-lens-lang', lang); } catch (_) { /* Keep the interface usable without storage. */ }
 
     // Update document lang attribute
-    document.documentElement.lang = lang;
+    // Current URLs retain English article bodies; only selected interface labels translate.
+    document.documentElement.lang = 'en';
+    if (currentLangSpan) currentLangSpan.setAttribute('lang', lang);
 }
 
 // Make changeLanguage global for the onclick handlers
@@ -398,16 +401,7 @@ document.querySelectorAll('.faq-acc-question').forEach((questionBtn, index) => {
     });
 });
 
-// CRO Analytics Event Tracking Logger
-document.querySelectorAll('[data-cro-event]').forEach(cta => {
-    cta.addEventListener('click', function() {
-        const eventName = this.getAttribute('data-cro-event');
-        console.log(`[CRO Analytics Event]: ${eventName}`);
-        if (window.clarity) {
-            window.clarity("event", eventName);
-        }
-    });
-});
+// CTA measurement is delegated once in analytics.js, including dynamically added menu links.
 
 // Ensure dynamic link is set on load
 document.addEventListener('DOMContentLoaded', () => {

@@ -136,10 +136,10 @@ const translations = {
         "footer-social": "Follow Us",
         "all-articles-title": "Insights & Heritage",
         "all-articles-subtitle": "Explore the stories, technology, and science behind your ancestral journey.",
-        "privacy-title": "Your photo stays private",
-        "privacy-sub-1": "Analyzed instantly",
-        "privacy-sub-2": "Deleted immediately",
-        "privacy-note": "We never store or share your image."
+        "privacy-title": "Photo processing information",
+        "privacy-sub-1": "Visual exploration",
+        "privacy-sub-2": "No DNA sample",
+        "privacy-note": "Read the published app privacy policy before uploading a photo."
     },
     de: {
         "nav-features": "Funktionen",
@@ -278,10 +278,10 @@ const translations = {
         "footer-social": "Folgen Sie uns",
         "all-articles-title": "Einblicke & Erbe",
         "all-articles-subtitle": "Erkunden Sie die Geschichten, Technologien und Wissenschaften hinter Ihrer ancestralen Reise.",
-        "privacy-title": "Ihr Foto bleibt privat",
-        "privacy-sub-1": "Sofort analysiert",
-        "privacy-sub-2": "Direkt gelöscht",
-        "privacy-note": "Wir speichern oder teilen Ihr Bild niemals."
+        "privacy-title": "Informationen zur Fotoverarbeitung",
+        "privacy-sub-1": "Visuelle Erkundung",
+        "privacy-sub-2": "Keine DNA-Probe",
+        "privacy-note": "Lesen Sie vor dem Hochladen die veröffentlichte Datenschutzerklärung der App."
     },
     es: {
         "nav-features": "Características",
@@ -420,9 +420,9 @@ const translations = {
         "footer-social": "Síguenos",
         "all-articles-title": "Perspectivas y Patrimonio",
         "all-articles-subtitle": "Explora las historias, la tecnología y la ciencia detrás de tu viaje ancestral.",
-        "privacy-title": "Tu foto sigue siendo privada",
-        "privacy-sub-1": "Analizada al instante",
-        "privacy-sub-2": "Eliminada de inmediato",
-        "privacy-note": "Nunca guardamos ni compartimos tu imagen."
+        "privacy-title": "Información sobre el tratamiento de fotos",
+        "privacy-sub-1": "Exploración visual",
+        "privacy-sub-2": "Sin muestra de ADN",
+        "privacy-note": "Lee la política de privacidad publicada de la app antes de subir una foto."
     }
 };
