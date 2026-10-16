@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-16",
+  "mobileMenu": true,
+  "homeFAQKeyboard": true,
+  "articleFAQKeyboard": true,
+  "storeEvents": "one per activation; primary and middle click tested",
+  "duplicateScriptGuard": true,
+  "independentStoreFlags": true,
+  "tableOfContents": true,
+  "imageDimensions": [
+    {
+      "src": "blog-ai-vs-dna.webp",
+      "width": 1024,
+      "height": 1024,
+      "declaredWidth": 1024,
+      "declaredHeight": 1024
+    },
+    {
+      "src": "blog-identity.webp",
+      "width": 640,
+      "height": 640,
+      "declaredWidth": 640,
+      "declaredHeight": 640
+    },
+    {
+      "src": "unexpected-ethnicity-dna-result.webp",
+      "width": 1200,
+      "height": 675,
+      "declaredWidth": 1200,
+      "declaredHeight": 675
+    }
+  ],
+  "analytics": "stubbed; no test data sent to Clarity"
+}

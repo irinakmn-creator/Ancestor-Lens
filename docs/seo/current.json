@@ -1,14 +1,14 @@
 {
   "summary": {
-    "htmlPages": 59,
-    "contentPages": 55,
+    "htmlPages": 62,
+    "contentPages": 58,
     "existingRedirects": [
       "blog-ancestry-without-dna.html",
       "blog-curiosity.html",
       "blog-dna-vs-ai.html",
       "blog-what-nationality-i-look-like.html"
     ],
-    "sitemapUrls": 55,
+    "sitemapUrls": 58,
     "duplicateSitemapUrls": [],
     "missingFromSitemap": [],
     "redirectInSitemap": [],
@@ -123,7 +123,7 @@
         ],
         [
           "h2",
-          "Try It Yourself"
+          "Explore visual heritage in the app"
         ],
         [
           "h2",
@@ -1094,6 +1094,129 @@
       "issues": []
     },
     {
+      "file": "blog-can-dna-predict-your-face.html",
+      "url": "https://ancestor-lens.com/blog-can-dna-predict-your-face.html",
+      "title": "Can DNA Predict Your Face? What Ancestry Results Can Tell",
+      "titleLength": 57,
+      "description": "Can DNA predict your face? Learn why ancestry percentages cannot reconstruct a selfie, what DNA phenotyping studies measure, and how to assess AI portraits.",
+      "descriptionLength": 156,
+      "h1": [
+        "Can DNA Predict Your Face? What Ancestry Results Can Tell"
+      ],
+      "headings": [
+        [
+          "title",
+          "Can DNA Predict Your Face? What Ancestry Results Can Tell"
+        ],
+        [
+          "h1",
+          "Can DNA Predict Your Face? What Ancestry Results Can Tell"
+        ],
+        [
+          "h2",
+          "Curious about visual heritage?"
+        ],
+        [
+          "h2",
+          "Can DNA predict what you look like?"
+        ],
+        [
+          "h2",
+          "In this guide"
+        ],
+        [
+          "h2",
+          "DNA face prediction, ancestry estimates and photo apps"
+        ],
+        [
+          "h2",
+          "Why an ethnicity percentage is not a facial blueprint"
+        ],
+        [
+          "h2",
+          "What does research on DNA-to-face prediction show?"
+        ],
+        [
+          "h2",
+          "Before using a DNA face generator: five checks"
+        ],
+        [
+          "h2",
+          "Where Ancestor Lens fits"
+        ],
+        [
+          "h2",
+          "Frequently asked questions"
+        ],
+        [
+          "h3",
+          "Can ChatGPT generate my face from my DNA results?"
+        ],
+        [
+          "h3",
+          "Can a selfie reveal my DNA?"
+        ],
+        [
+          "h3",
+          "Does a convincing AI portrait prove the prediction worked?"
+        ],
+        [
+          "h3",
+          "Can an ancestry estimate tell me my nationality?"
+        ],
+        [
+          "h2",
+          "Continue exploring"
+        ],
+        [
+          "h2",
+          "Explore visual heritage with Ancestor Lens"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-can-dna-predict-your-face.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "#three-tools",
+        "#percentages",
+        "#research",
+        "#checklist",
+        "#questions",
+        "https://medlineplus.gov/genetics/understanding/traits/eyecolor/",
+        "blog-do-i-look-like-my-dna-results.html",
+        "https://newsinhealth.nih.gov/2025/01/about-faces",
+        "https://www.nature.com/articles/s41467-025-61761-7",
+        "blog-ai-face-ethnicity-test.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-is-1-percent-ancestry-dna-significant.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog.html"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
       "file": "blog-can-dna-tell-what-country-you-are-from.html",
       "url": "https://ancestor-lens.com/blog-can-dna-tell-what-country-you-are-from.html",
       "title": "Can a DNA Test Tell What Country You're From? Explained",
@@ -1751,6 +1874,7 @@
         "blog.html",
         "index.html",
         "blog.html",
+        "blog-can-dna-predict-your-face.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "blog-ai-ethnicity-estimate-vs-dna-test.html",
@@ -1874,6 +1998,134 @@
         "https://www.tiktok.com/@ancestorlens",
         "https://x.com/AncestorLensApp",
         "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
+      "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+      "url": "https://ancestor-lens.com/blog-ethnicity-vs-nationality-vs-ancestry.html",
+      "title": "Ethnicity vs Nationality vs Ancestry: Differences Explained",
+      "titleLength": 59,
+      "description": "Understand ethnicity vs nationality vs ancestry with clear examples. Learn what DNA estimates and facial appearance can\u2014and cannot\u2014tell you about identity.",
+      "descriptionLength": 155,
+      "h1": [
+        "Ethnicity vs Nationality vs Ancestry: Differences Explained"
+      ],
+      "headings": [
+        [
+          "title",
+          "Ethnicity vs Nationality vs Ancestry: Differences Explained"
+        ],
+        [
+          "h1",
+          "Ethnicity vs Nationality vs Ancestry: Differences Explained"
+        ],
+        [
+          "h2",
+          "Curious about visual heritage?"
+        ],
+        [
+          "h2",
+          "The difference in one minute"
+        ],
+        [
+          "h2",
+          "In this guide"
+        ],
+        [
+          "h2",
+          "Ethnicity, nationality, ancestry and appearance compared"
+        ],
+        [
+          "h2",
+          "Why \u201cWhere are you from?\u201d can have several answers"
+        ],
+        [
+          "h2",
+          "Nationality and national identity are not always used the same way"
+        ],
+        [
+          "h2",
+          "Does a DNA test determine your ethnicity?"
+        ],
+        [
+          "h2",
+          "Can facial appearance tell ethnicity or nationality?"
+        ],
+        [
+          "h2",
+          "A clearer way to describe your own background"
+        ],
+        [
+          "h2",
+          "Frequently asked questions"
+        ],
+        [
+          "h3",
+          "Can people have the same nationality and different ethnicities?"
+        ],
+        [
+          "h3",
+          "Can ethnicity and nationality use the same word?"
+        ],
+        [
+          "h3",
+          "Do I need a DNA test to explore my heritage?"
+        ],
+        [
+          "h3",
+          "Does 1% in a DNA result automatically change my identity?"
+        ],
+        [
+          "h2",
+          "Continue exploring"
+        ],
+        [
+          "h2",
+          "Explore visual heritage with Ancestor Lens"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-ethnicity-vs-nationality-vs-ancestry.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "#comparison",
+        "#same-word",
+        "#dna",
+        "#describe",
+        "#questions",
+        "https://www.genome.gov/genetics-glossary/Genetic-Ancestry",
+        "https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion",
+        "https://www.genome.gov/about-genomics/policy-issues/population-descriptors-in-genomics",
+        "blog-is-1-percent-ancestry-dna-significant.html",
+        "blog-what-nationality-look-like.html",
+        "blog-what-ethnicity-i-look-like.html",
+        "blog-how-to-trace-ancestry-without-dna-test.html",
+        "blog-can-dna-predict-your-face.html",
+        "blog-is-1-percent-ancestry-dna-significant.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog.html"
       ],
       "cards": [],
       "issues": []
@@ -3129,7 +3381,7 @@
         ],
         [
           "h2",
-          "Try It Yourself"
+          "Explore visual heritage in the app"
         ],
         [
           "h2",
@@ -4880,6 +5132,129 @@
       "issues": []
     },
     {
+      "file": "blog-is-1-percent-ancestry-dna-significant.html",
+      "url": "https://ancestor-lens.com/blog-is-1-percent-ancestry-dna-significant.html",
+      "title": "Is 1% Ancestry DNA Significant? Small Percentages Explained",
+      "titleLength": 59,
+      "description": "Is 1% ancestry DNA real or noise? Learn to check small ethnicity percentages, understand uncertainty and research family history without jumping to conclusions.",
+      "descriptionLength": 160,
+      "h1": [
+        "Is 1% Ancestry DNA Significant? Small Percentages Explained"
+      ],
+      "headings": [
+        [
+          "title",
+          "Is 1% Ancestry DNA Significant? Small Percentages Explained"
+        ],
+        [
+          "h1",
+          "Is 1% Ancestry DNA Significant? Small Percentages Explained"
+        ],
+        [
+          "h2",
+          "Curious about visual heritage?"
+        ],
+        [
+          "h2",
+          "Does 1% ancestry DNA mean anything?"
+        ],
+        [
+          "h2",
+          "In this guide"
+        ],
+        [
+          "h2",
+          "Is a small ethnicity percentage real or noise?"
+        ],
+        [
+          "h2",
+          "How to investigate a 1% result"
+        ],
+        [
+          "h2",
+          "How many generations back is 1% DNA?"
+        ],
+        [
+          "h2",
+          "A worked example: an unexpected 1% region"
+        ],
+        [
+          "h2",
+          "Can 1% ancestry affect how you look?"
+        ],
+        [
+          "h2",
+          "Frequently asked questions"
+        ],
+        [
+          "h3",
+          "Is 0.1% or 1% always false?"
+        ],
+        [
+          "h3",
+          "What if the percentage appears on two testing sites?"
+        ],
+        [
+          "h3",
+          "Should I buy another test just to confirm 1%?"
+        ],
+        [
+          "h3",
+          "Can Ancestor Lens verify trace ancestry?"
+        ],
+        [
+          "h2",
+          "Continue exploring"
+        ],
+        [
+          "h2",
+          "Explore visual heritage with Ancestor Lens"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-is-1-percent-ancestry-dna-significant.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "blog.html",
+        "index.html#download",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "#noise",
+        "#check",
+        "#generations",
+        "#example",
+        "#questions",
+        "https://help.ancestry.co.uk/hc/en-gb/articles/53933322469779-AncestryDNA-Regions-and-Journeys-FAQ",
+        "blog-how-to-understand-dna-matches.html",
+        "https://www.23andme.org/blog/articles/a-major-update-to-ancestry-composition-is-coming-soon/",
+        "blog-how-much-dna-inherit-from-ancestors.html",
+        "blog-can-dna-predict-your-face.html",
+        "blog-why-dna-results-differ-between-companies.html",
+        "blog-can-dna-predict-your-face.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog.html"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
       "file": "blog-last-name-origin.html",
       "url": "https://ancestor-lens.com/blog-last-name-origin.html",
       "title": "Where Does My Last Name Come From? Find Your Surname Origin | Ancestor Lens",
@@ -5967,8 +6342,8 @@
           "What Country Do My Facial Features Come From?"
         ],
         [
-          "h3",
-          "Try It Yourself"
+          "h2",
+          "Explore visual heritage in the app"
         ],
         [
           "h2",
@@ -6488,6 +6863,7 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-is-1-percent-ancestry-dna-significant.html",
         "blog-why-dna-results-differ-between-companies.html",
         "blog-which-parent-did-my-ancestry-come-from.html",
         "blog-how-to-understand-dna-matches.html",
@@ -6529,7 +6905,7 @@
         ],
         [
           "h2",
-          "Try It Yourself"
+          "Explore visual heritage in the app"
         ],
         [
           "h2",
@@ -6868,7 +7244,7 @@
         ],
         [
           "h2",
-          "Try It Yourself"
+          "Explore visual heritage in the app"
         ],
         [
           "h2",
@@ -6971,6 +7347,7 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://deepqeeb.pro/ancestor-lens-privacy-policy.html",
         "blog-how-accurate-ai-ethnicity-test.html",
@@ -8093,6 +8470,18 @@
         ],
         [
           "h3",
+          "Can DNA Predict Your Face? What Ancestry Results Can Tell"
+        ],
+        [
+          "h3",
+          "Ethnicity vs Nationality vs Ancestry: Differences Explained"
+        ],
+        [
+          "h3",
+          "Is 1% Ancestry DNA Significant? Small Percentages Explained"
+        ],
+        [
+          "h3",
           "Autosomal DNA vs Y-DNA vs mtDNA: Which Test?"
         ],
         [
@@ -8326,6 +8715,9 @@
         "blog.html",
         "index.html#download",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-can-dna-predict-your-face.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-is-1-percent-ancestry-dna-significant.html",
         "blog-autosomal-dna-vs-y-dna-vs-mtdna.html",
         "blog-how-to-find-female-ancestor-maiden-name.html",
         "blog-what-is-a-second-cousin.html",
@@ -8386,6 +8778,9 @@
         "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
       ],
       "cards": [
+        "blog-can-dna-predict-your-face.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-is-1-percent-ancestry-dna-significant.html",
         "blog-autosomal-dna-vs-y-dna-vs-mtdna.html",
         "blog-how-to-find-female-ancestor-maiden-name.html",
         "blog-what-is-a-second-cousin.html",
@@ -8560,6 +8955,18 @@
         [
           "h3",
           "What Nationality Do I Look Like?"
+        ],
+        [
+          "h3",
+          "Can DNA Predict Your Face? What Ancestry Results Can Tell"
+        ],
+        [
+          "h3",
+          "Ethnicity vs Nationality vs Ancestry: Differences Explained"
+        ],
+        [
+          "h3",
+          "Is 1% Ancestry DNA Significant? Small Percentages Explained"
         ]
       ],
       "canonical": [
@@ -8602,6 +9009,9 @@
         "blog-ai-face-ethnicity-test.html",
         "blog-what-ethnicity-i-look-like.html",
         "blog-what-nationality-look-like.html",
+        "blog-can-dna-predict-your-face.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-is-1-percent-ancestry-dna-significant.html",
         "blog.html",
         "#",
         "#how-it-works",

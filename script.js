@@ -71,7 +71,23 @@ if (ethnicityCard) {
 }
 
 // FAQ accordion functionality
-document.querySelectorAll('.faq-question').forEach(question => {
+document.querySelectorAll('.faq-question').forEach((question, index) => {
+    const answer = question.closest('.faq-item')?.querySelector('.faq-answer');
+    if (answer) {
+        answer.id = answer.id || `legacy-faq-answer-${index + 1}`;
+        question.setAttribute('aria-controls', answer.id);
+    }
+    question.setAttribute('aria-expanded', question.closest('.faq-item').classList.contains('active'));
+    if (question.tagName !== 'BUTTON') {
+        question.setAttribute('role', 'button');
+        question.tabIndex = 0;
+        question.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                question.click();
+            }
+        });
+    }
     question.addEventListener('click', function () {
         const item = this.closest('.faq-item');
         const isActive = item.classList.contains('active');
@@ -79,11 +95,13 @@ document.querySelectorAll('.faq-question').forEach(question => {
         // Close all other FAQs
         document.querySelectorAll('.faq-item').forEach(el => {
             el.classList.remove('active');
+            el.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
         });
 
         // Toggle current FAQ
         if (!isActive) {
             item.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
         }
     });
 });

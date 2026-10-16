@@ -1,0 +1,1390 @@
+[
+  {
+    "file": "index.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 135,
+        "height": 45,
+        "top": 547.5625,
+        "bottom": 592.5625
+      },
+      {
+        "width": 135,
+        "height": 45,
+        "top": 547.5625,
+        "bottom": 592.5625
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 14229.265625,
+        "bottom": 14285.265625
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 14301.265625,
+        "bottom": 14357.265625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 280,
+        "height": 48,
+        "top": 35637,
+        "bottom": 35685
+      },
+      {
+        "width": 280,
+        "height": 48,
+        "top": 35725,
+        "bottom": 35773
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 792.609375,
+        "bottom": 836.609375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 844.609375,
+        "bottom": 888.609375
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 8872.546875,
+        "bottom": 8920.546875
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 8960.546875,
+        "bottom": 9008.546875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 792.609375,
+        "bottom": 836.609375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 844.609375,
+        "bottom": 888.609375
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 9175.78125,
+        "bottom": 9223.78125
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 9263.78125,
+        "bottom": 9311.78125
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 762.015625,
+        "bottom": 806.015625
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 814.015625,
+        "bottom": 858.015625
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 11235.921875,
+        "bottom": 11283.921875
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 11323.921875,
+        "bottom": 11371.921875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1077.90625,
+        "bottom": 1121.90625
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1129.90625,
+        "bottom": 1173.90625
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 19173.5625,
+        "bottom": 19221.5625
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 19261.5625,
+        "bottom": 19309.5625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-country-do-my-facial-features-come-from.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 743.703125,
+        "bottom": 787.703125
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 795.703125,
+        "bottom": 839.703125
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 9538.65625,
+        "bottom": 9586.65625
+      },
+      {
+        "width": 232,
+        "height": 48,
+        "top": 9626.65625,
+        "bottom": 9674.65625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-can-dna-predict-your-face.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1105.203125,
+        "bottom": 1149.203125
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1157.203125,
+        "bottom": 1201.203125
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9109.046875,
+        "bottom": 9155.046875
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9169.046875,
+        "bottom": 9215.046875
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1024,
+      "height": 1024
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1057.203125,
+        "bottom": 1101.203125
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1109.203125,
+        "bottom": 1153.203125
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9895.609375,
+        "bottom": 9941.609375
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9955.609375,
+        "bottom": 10001.609375
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 640,
+      "height": 640
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-is-1-percent-ancestry-dna-significant.html",
+    "width": 320,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1149.59375,
+        "bottom": 1193.59375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 1201.59375,
+        "bottom": 1245.59375
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9449.40625,
+        "bottom": 9495.40625
+      },
+      {
+        "width": 240,
+        "height": 46,
+        "top": 9509.40625,
+        "bottom": 9555.40625
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1200,
+      "height": 675
+    },
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 150,
+        "height": 50,
+        "top": 473.96875,
+        "bottom": 523.96875
+      },
+      {
+        "width": 150,
+        "height": 50,
+        "top": 473.96875,
+        "bottom": 523.96875
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 13362.625,
+        "bottom": 13418.625
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 13434.625,
+        "bottom": 13490.625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 350,
+        "height": 48,
+        "top": 32509.96875,
+        "bottom": 32557.96875
+      },
+      {
+        "width": 350,
+        "height": 48,
+        "top": 32597.96875,
+        "bottom": 32645.96875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 7675.9375,
+        "bottom": 7723.9375
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 7763.9375,
+        "bottom": 7811.9375
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 7804.5625,
+        "bottom": 7852.5625
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 7892.5625,
+        "bottom": 7940.5625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 673.375,
+        "bottom": 717.375
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 9754.265625,
+        "bottom": 9802.265625
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 9842.265625,
+        "bottom": 9890.265625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 910.046875,
+        "bottom": 954.046875
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 910.046875,
+        "bottom": 954.046875
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 16323.25,
+        "bottom": 16371.25
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 16411.25,
+        "bottom": 16459.25
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-country-do-my-facial-features-come-from.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 687.515625,
+        "bottom": 731.515625
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 687.515625,
+        "bottom": 731.515625
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 8388.71875,
+        "bottom": 8436.71875
+      },
+      {
+        "width": 302,
+        "height": 48,
+        "top": 8476.71875,
+        "bottom": 8524.71875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-can-dna-predict-your-face.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 930.828125,
+        "bottom": 974.828125
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 930.828125,
+        "bottom": 974.828125
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 7892.78125,
+        "bottom": 7938.78125
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 7952.78125,
+        "bottom": 7998.78125
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1024,
+      "height": 1024
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 978.828125,
+        "bottom": 1022.828125
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 978.828125,
+        "bottom": 1022.828125
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 8377.53125,
+        "bottom": 8423.53125
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 8437.53125,
+        "bottom": 8483.53125
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 640,
+      "height": 640
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-is-1-percent-ancestry-dna-significant.html",
+    "width": 390,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 128,
+        "height": 44,
+        "top": 903.640625,
+        "bottom": 947.640625
+      },
+      {
+        "width": 128,
+        "height": 44,
+        "top": 903.640625,
+        "bottom": 947.640625
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 8001.953125,
+        "bottom": 8047.953125
+      },
+      {
+        "width": 310,
+        "height": 46,
+        "top": 8061.953125,
+        "bottom": 8107.953125
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1200,
+      "height": 675
+    },
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 150,
+        "height": 50,
+        "top": 400.375,
+        "bottom": 450.375
+      },
+      {
+        "width": 150,
+        "height": 50,
+        "top": 400.375,
+        "bottom": 450.375
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 12043.328125,
+        "bottom": 12099.328125
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 12115.328125,
+        "bottom": 12171.328125
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 156,
+        "height": 52,
+        "top": 26549.8125,
+        "bottom": 26601.8125
+      },
+      {
+        "width": 156,
+        "height": 52,
+        "top": 26549.8125,
+        "bottom": 26601.8125
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 5556.609375,
+        "bottom": 5604.609375
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 5556.609375,
+        "bottom": 5604.609375
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 5756.9375,
+        "bottom": 5804.9375
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 5756.9375,
+        "bottom": 5804.9375
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 573.203125,
+        "bottom": 617.203125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6806.4375,
+        "bottom": 6854.4375
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6806.4375,
+        "bottom": 6854.4375
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 700.875,
+        "bottom": 744.875
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 700.875,
+        "bottom": 744.875
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 12037.640625,
+        "bottom": 12085.640625
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 12037.640625,
+        "bottom": 12085.640625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-country-do-my-facial-features-come-from.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 526.15625,
+        "bottom": 570.15625
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 526.15625,
+        "bottom": 570.15625
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6609.53125,
+        "bottom": 6657.53125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6609.53125,
+        "bottom": 6657.53125
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-can-dna-predict-your-face.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5357.515625,
+        "bottom": 5403.515625
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5357.515625,
+        "bottom": 5403.515625
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1024,
+      "height": 1024
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5700.234375,
+        "bottom": 5746.234375
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5700.234375,
+        "bottom": 5746.234375
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 640,
+      "height": 640
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-is-1-percent-ancestry-dna-significant.html",
+    "width": 768,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 634.953125,
+        "bottom": 678.953125
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5564.84375,
+        "bottom": 5610.84375
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5564.84375,
+        "bottom": 5610.84375
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1200,
+      "height": 675
+    },
+    "errors": []
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 150,
+        "height": 50,
+        "top": 554.59375,
+        "bottom": 604.59375
+      },
+      {
+        "width": 150,
+        "height": 50,
+        "top": 554.59375,
+        "bottom": 604.59375
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 9238.828125,
+        "bottom": 9294.828125
+      },
+      {
+        "width": 168,
+        "height": 56,
+        "top": 9238.828125,
+        "bottom": 9294.828125
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 156,
+        "height": 52,
+        "top": 13036.375,
+        "bottom": 13088.375
+      },
+      {
+        "width": 156,
+        "height": 52,
+        "top": 13036.375,
+        "bottom": 13088.375
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-ai-face-ethnicity-test.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 613.203125,
+        "bottom": 657.203125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 613.203125,
+        "bottom": 657.203125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6188.671875,
+        "bottom": 6236.671875
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6188.671875,
+        "bottom": 6236.671875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-nationality-look-like.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 613.203125,
+        "bottom": 657.203125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 613.203125,
+        "bottom": 657.203125
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6634.5,
+        "bottom": 6682.5
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 6634.5,
+        "bottom": 6682.5
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-ethnicity-i-look-like.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 582.609375,
+        "bottom": 626.609375
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 582.609375,
+        "bottom": 626.609375
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 7850.515625,
+        "bottom": 7898.515625
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 7850.515625,
+        "bottom": 7898.515625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-how-accurate-ai-ethnicity-test.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 740.875,
+        "bottom": 784.875
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 740.875,
+        "bottom": 784.875
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 13633.765625,
+        "bottom": 13681.765625
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 13633.765625,
+        "bottom": 13681.765625
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-what-country-do-my-facial-features-come-from.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 566.15625,
+        "bottom": 610.15625
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 566.15625,
+        "bottom": 610.15625
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 7554.1875,
+        "bottom": 7602.1875
+      },
+      {
+        "width": 144,
+        "height": 48,
+        "top": 7554.1875,
+        "bottom": 7602.1875
+      }
+    ],
+    "images": [],
+    "hero": null,
+    "errors": []
+  },
+  {
+    "file": "blog-can-dna-predict-your-face.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 746.953125,
+        "bottom": 790.953125
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 746.953125,
+        "bottom": 790.953125
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5944.328125,
+        "bottom": 5990.328125
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 5944.328125,
+        "bottom": 5990.328125
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1024,
+      "height": 1024
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 809.671875,
+        "bottom": 853.671875
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 809.671875,
+        "bottom": 853.671875
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 6309.671875,
+        "bottom": 6355.671875
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 6309.671875,
+        "bottom": 6355.671875
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 640,
+      "height": 640
+    },
+    "errors": []
+  },
+  {
+    "file": "blog-is-1-percent-ancestry-dna-significant.html",
+    "width": 1440,
+    "overflow": false,
+    "h1": 1,
+    "stores": [
+      {
+        "width": 132,
+        "height": 44,
+        "top": 716.359375,
+        "bottom": 760.359375
+      },
+      {
+        "width": 132,
+        "height": 44,
+        "top": 716.359375,
+        "bottom": 760.359375
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 6028.765625,
+        "bottom": 6074.765625
+      },
+      {
+        "width": 138,
+        "height": 46,
+        "top": 6028.765625,
+        "bottom": 6074.765625
+      }
+    ],
+    "images": [],
+    "hero": {
+      "width": 1200,
+      "height": 675
+    },
+    "errors": []
+  }
+]

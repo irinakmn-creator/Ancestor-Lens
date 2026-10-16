@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ancestor-lens.com/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ancestor-lens.com/blog.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://ancestor-lens.com/blog-what-nationality-look-like.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://ancestor-lens.com/blog-what-do-ancestry-dna-percentages-mean.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -286,7 +286,7 @@
   </url>
   <url>
     <loc>https://ancestor-lens.com/blog-do-i-look-like-my-dna-results.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -308,4 +308,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+<url><loc>https://ancestor-lens.com/blog-can-dna-predict-your-face.html</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://ancestor-lens.com/blog-ethnicity-vs-nationality-vs-ancestry.html</loc><lastmod>2026-10-16</lastmod></url>
+<url><loc>https://ancestor-lens.com/blog-is-1-percent-ancestry-dna-significant.html</loc><lastmod>2026-10-16</lastmod></url>
 </urlset>

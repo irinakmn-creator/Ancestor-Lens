@@ -1456,8 +1456,9 @@ section.positioning .trust-badge:not(:last-child):after {
 .try-it-block .cta-store-buttons {
     margin-top: 24px;
     justify-content: center;
-    gap: 24px;
+    gap: 12px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .try-it-block .store-btn img {
@@ -3528,3 +3529,21 @@ section h2,
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Keep small store artwork, with comfortable touch targets and visible keyboard focus. */
+.store-btn, .store-badge-btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible { outline: 3px solid var(--color-gold); outline-offset: 4px; }
+.post-header .try-it-block h2, .article-app-intro h2 { font-family: var(--font-serif); font-size: 1.5rem; margin: 0 0 12px; }
+.article-app-intro { margin-top: 24px; }
+.article-app-intro p { color: var(--color-text-secondary); }
+@media (max-width: 600px) {
+    .post-header .try-it-block, .article-app-intro { padding: 20px 16px; margin-bottom: 28px; }
+    .try-it-block .cta-store-buttons { margin-top: 16px; gap: 8px; flex-direction: row; }
+    .try-it-block .store-btn { flex: 0 1 128px; width: auto; min-width: 0; }
+    .try-it-block .store-btn img { width: 100%; height: auto; }
+}
+
+/* Caption stays outside the cropped illustration on the new editorial pages. */
+.article-hero--caption { aspect-ratio: auto; }
+.article-hero--caption img { aspect-ratio: 16 / 9; height: auto; }
+.article-hero--caption figcaption { padding: 12px 16px; color: #52605C; font-size: 0.8125rem; line-height: 1.5; }

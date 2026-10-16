@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "can-dna-predict-your-face",
+    "title": "Can DNA Predict Your Face? What Ancestry Results Can Tell",
+    "category": "DNA & Appearance",
+    "tags": [
+      "DNA face prediction",
+      "DNA phenotyping",
+      "Appearance",
+      "AI portraits"
+    ],
+    "image": "blog-ai-vs-dna.webp",
+    "width": 1024,
+    "height": 1024,
+    "alt": "Editorial illustration comparing visual face analysis with genetic ancestry research",
+    "description": "Can DNA predict your face? Learn why ancestry percentages cannot reconstruct a selfie, what DNA phenotyping studies measure, and how to assess AI portraits.",
+    "deck": "A chart of ancestry percentages is not a blueprint for a face. Genetic research, trait predictions and AI-generated portraits use different inputs\u2014and deserve different expectations.",
+    "file": "blog-can-dna-predict-your-face.html",
+    "words": 842
+  },
+  {
+    "slug": "ethnicity-vs-nationality-vs-ancestry",
+    "title": "Ethnicity vs Nationality vs Ancestry: Differences Explained",
+    "category": "Identity & Heritage",
+    "tags": [
+      "Ethnicity",
+      "Nationality",
+      "Genetic ancestry",
+      "Cultural identity"
+    ],
+    "image": "blog-identity.webp",
+    "width": 640,
+    "height": 640,
+    "alt": "Editorial illustration about personal identity and family heritage",
+    "description": "Understand ethnicity vs nationality vs ancestry with clear examples. Learn what DNA estimates and facial appearance can\u2014and cannot\u2014tell you about identity.",
+    "deck": "Your family history, cultural identity and connection to a country can describe different parts of your life. A DNA percentage or a stranger\u2019s guess does not have to settle all of them.",
+    "file": "blog-ethnicity-vs-nationality-vs-ancestry.html",
+    "words": 867
+  },
+  {
+    "slug": "is-1-percent-ancestry-dna-significant",
+    "title": "Is 1% Ancestry DNA Significant? Small Percentages Explained",
+    "category": "Understanding DNA Results",
+    "tags": [
+      "Trace ancestry",
+      "Small DNA percentages",
+      "Ethnicity estimates",
+      "Family research"
+    ],
+    "image": "unexpected-ethnicity-dna-result.webp",
+    "width": 1200,
+    "height": 675,
+    "alt": "Illustration of a person reviewing an unexpected region in a DNA ancestry report",
+    "description": "Is 1% ancestry DNA real or noise? Learn to check small ethnicity percentages, understand uncertainty and research family history without jumping to conclusions.",
+    "deck": "A tiny unexpected region can raise a big question. Treat a 1% ancestry estimate as a lead to evaluate\u2014not an automatic mistake or proof of a particular ancestor.",
+    "file": "blog-is-1-percent-ancestry-dna-significant.html",
+    "words": 879
+  }
+]

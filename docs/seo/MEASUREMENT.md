@@ -50,3 +50,9 @@ Outbound click totals are intent signals, not verified downloads. Qualified inst
 - Record a before/after date range after deployment. This repository audit makes no claim of traffic or conversion improvement.
 
 Reference: [Clarity API and custom events](https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-api).
+
+## October 16, 2026: store conversion filters
+
+Store outbound activations also set `download_clicked=yes` and the independent store flag `download_app_store=yes` or `download_google_play=yes`. These flags are never reset to `no` by the site. Filter `download_clicked=yes` to inspect the union of store-click sessions, then read Clarity's unique-user/session counts instead of adding per-store totals. One person may click both stores.
+
+This is prospective instrumentation only; it does not backfill earlier visits. Existing event names and their page/location attribution remain unchanged, with one event per activation. A store click is not a completed download. Review actual production events after deployment and existing smart-event definitions before comparing counts.

@@ -60,6 +60,12 @@
         send('set', 'cta_store', apple ? 'app_store' : google ? 'google_play' : 'on_site');
         // Exactly one custom event per interaction, including legacy homepage CTAs.
         const type = apple ? 'app_store_click' : google ? 'google_play_click' : 'cta_click';
+        if (apple || google) {
+            // Persistent session flags simplify deduplicated conversion reports.
+            // Keep store flags separate so a second store click cannot erase the first.
+            send('set', 'download_clicked', 'yes');
+            send('set', apple ? 'download_app_store' : 'download_google_play', 'yes');
+        }
         // Clarity tags are session context; embed page/location in the event itself
         // so a later page or CTA cannot overwrite its attribution.
         send('event', `${type}__${pageKey}__${locationName}`);
