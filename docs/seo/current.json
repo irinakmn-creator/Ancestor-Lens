@@ -1,25 +1,163 @@
 {
   "summary": {
-    "htmlPages": 62,
-    "contentPages": 58,
+    "htmlPages": 66,
+    "contentPages": 62,
     "existingRedirects": [
       "blog-ancestry-without-dna.html",
       "blog-curiosity.html",
       "blog-dna-vs-ai.html",
       "blog-what-nationality-i-look-like.html"
     ],
-    "sitemapUrls": 58,
+    "sitemapUrls": 62,
     "duplicateSitemapUrls": [],
     "missingFromSitemap": [],
     "redirectInSitemap": [],
     "sitemapMissingFiles": [],
     "duplicateTitles": [],
     "duplicateDescriptions": [],
-    "missingImageDimensions": 0,
+    "missingImageDimensions": 5,
     "duplicateBlogCards": [],
     "articlesMissingFromBlog": []
   },
   "pages": [
+    {
+      "file": "blog-ai-ancestry-app-photo-privacy.html",
+      "url": "https://ancestor-lens.com/blog-ai-ancestry-app-photo-privacy.html",
+      "title": "Are AI Photo Ancestry Apps Private? What to Check | Ancestor Lens",
+      "titleLength": 65,
+      "description": "Before uploading a selfie to an AI ancestry app, learn what to check about photo storage, AI providers, data sharing, deletion and app permissions.",
+      "descriptionLength": 147,
+      "h1": [
+        "Are AI Ancestry Apps Private? What to Check Before Uploading a Photo"
+      ],
+      "headings": [
+        [
+          "title",
+          "Are AI Photo Ancestry Apps Private? What to Check | Ancestor Lens"
+        ],
+        [
+          "h1",
+          "Are AI Ancestry Apps Private? What to Check Before Uploading a Photo"
+        ],
+        [
+          "h3",
+          "Transparent, Privacy-First Exploration"
+        ],
+        [
+          "h2",
+          "1. Does the App Process Photos on Your Device or Through a Service?"
+        ],
+        [
+          "h2",
+          "2. How Long Are Photos Kept?"
+        ],
+        [
+          "h2",
+          "3. Is Your Photo Shared with Another Company?"
+        ],
+        [
+          "h2",
+          "4. What Happens to Photos in Ancestor Lens?"
+        ],
+        [
+          "h2",
+          "5. What Permissions Does the App Request?"
+        ],
+        [
+          "h2",
+          "6. Can You Delete Your Account or Request Data Deletion?"
+        ],
+        [
+          "h2",
+          "7. Are You Uploading Someone Else\u2019s Photo?"
+        ],
+        [
+          "h2",
+          "8. Do You Understand What the Result Means?"
+        ],
+        [
+          "h3",
+          "Quick AI App Privacy Checklist"
+        ],
+        [
+          "h2",
+          "Explore Visual Heritage on Your Terms"
+        ],
+        [
+          "h2",
+          "Frequently Asked Questions"
+        ],
+        [
+          "h3",
+          "Does Ancestor Lens store my photos permanently?"
+        ],
+        [
+          "h3",
+          "Are photos uploaded to AI ancestry apps used to train public AI models?"
+        ],
+        [
+          "h3",
+          "How can I limit what photos an AI app can access on my device?"
+        ],
+        [
+          "h3",
+          "Is it safe to upload old family photos of deceased ancestors?"
+        ],
+        [
+          "h3",
+          "Can an AI ancestry app steal my biological DNA?"
+        ],
+        [
+          "h3",
+          "Discover Your Visual Heritage Securely"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-ai-ancestry-app-photo-privacy.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "blog.html",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "index.html",
+        "blog-ai-safety.html",
+        "blog-identify-people-old-family-photos.html",
+        "index.html",
+        "index.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-best-photo-ai-ancestry-test.html",
+        "blog-why-ai-ancestry-results-change.html",
+        "blog-ai-safety.html",
+        "blog-identify-people-old-family-photos.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-research-family-history-after-ai-result.html",
+        "https://www.tiktok.com/@ancestorlens",
+        "https://x.com/AncestorLensApp",
+        "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ],
+      "cards": [],
+      "issues": []
+    },
     {
       "file": "blog-ai-ethnicity-estimate-vs-dna-test.html",
       "url": "https://ancestor-lens.com/blog-ai-ethnicity-estimate-vs-dna-test.html",
@@ -311,6 +449,7 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-ai-ancestry-app-photo-privacy.html",
         "blog-face-analysis.html",
         "blog-heritage-no-dna.html",
         "blog-roots-psychology.html",
@@ -1079,6 +1218,9 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-identify-people-old-family-photos.html",
         "blog-how-accurate-ai-ethnicity-test.html",
         "blog-what-country-do-my-facial-features-come-from.html",
         "blog-face-ancestry.html",
@@ -2121,6 +2263,7 @@
         "blog-what-nationality-look-like.html",
         "blog-what-ethnicity-i-look-like.html",
         "blog-how-to-trace-ancestry-without-dna-test.html",
+        "blog-phenotype-facial-features-ancestry.html",
         "blog-can-dna-predict-your-face.html",
         "blog-is-1-percent-ancestry-dna-significant.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
@@ -2752,7 +2895,9 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-no-dna-matches-one-side-family.html",
         "index.html#download",
+        "blog-no-dna-matches-one-side-family.html",
         "blog-how-to-understand-dna-matches.html",
         "blog-unexpected-dna-results-family-secret.html",
         "blog-find-family-medical-history-unknown-parents.html",
@@ -5013,16 +5158,154 @@
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "blog-which-parent-did-my-ancestry-come-from.html",
+        "blog-no-dna-matches-one-side-family.html",
         "index.html#download",
         "index.html#download",
         "blog-what-is-a-second-cousin.html",
         "blog-what-do-ancestry-dna-percentages-mean.html",
+        "blog-no-dna-matches-one-side-family.html",
         "blog-last-name-origin.html",
         "blog-find-ancestor-immigration-records.html",
         "blog-how-to-build-a-family-tree.html",
         "blog-why-dna-results-differ-between-companies.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "https://www.tiktok.com/@ancestorlens",
+        "https://x.com/AncestorLensApp",
+        "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
+      "file": "blog-identify-people-old-family-photos.html",
+      "url": "https://ancestor-lens.com/blog-identify-people-old-family-photos.html",
+      "title": "How to Identify People in Old Family Photos | Ancestor Lens",
+      "titleLength": 59,
+      "description": "Found an old family photo? Learn how to identify people using names, dates, family stories and historical records, and explore visual resemblance.",
+      "descriptionLength": 146,
+      "h1": [
+        "How to Identify People in Old Family Photos: A Step-by-Step Guide"
+      ],
+      "headings": [
+        [
+          "title",
+          "How to Identify People in Old Family Photos | Ancestor Lens"
+        ],
+        [
+          "h1",
+          "How to Identify People in Old Family Photos: A Step-by-Step Guide"
+        ],
+        [
+          "h3",
+          "Curious About Facial Resemblance?"
+        ],
+        [
+          "h2",
+          "1. Check the Front and Back of the Photograph"
+        ],
+        [
+          "h3",
+          "Helpful Tip: Don't Jump to Conclusions"
+        ],
+        [
+          "h2",
+          "2. Ask Relatives Specific Questions"
+        ],
+        [
+          "h2",
+          "3. Look for Clues in the Background"
+        ],
+        [
+          "h2",
+          "4. Compare the Photo with Other Family Pictures"
+        ],
+        [
+          "h2",
+          "5. Build a Timeline of Possible Candidates"
+        ],
+        [
+          "h2",
+          "6. Search Records to Test Your Theory"
+        ],
+        [
+          "h2",
+          "Can AI Identify an Ancestor from a Photo?"
+        ],
+        [
+          "h2",
+          "What If I Can\u2019t Identify the Person?"
+        ],
+        [
+          "h2",
+          "Start Exploring the Faces in Your Family Story"
+        ],
+        [
+          "h2",
+          "Frequently Asked Questions"
+        ],
+        [
+          "h3",
+          "Can AI identify an unknown ancestor from an old photo?"
+        ],
+        [
+          "h3",
+          "Does a handwritten name on the back of a vintage photo always identify the subject?"
+        ],
+        [
+          "h3",
+          "How can I estimate the time period of an old family photograph?"
+        ],
+        [
+          "h3",
+          "What should I do if I cannot identify a person in an old family photo?"
+        ],
+        [
+          "h3",
+          "Is Ancestor Lens a DNA test or genealogical archive?"
+        ],
+        [
+          "h3",
+          "Discover Your Face Heritage with Ancestor Lens"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-identify-people-old-family-photos.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "blog.html",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "index.html",
+        "https://www.archives.gov/news/articles/standout-census-4",
+        "index.html",
+        "index.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-research-family-history-after-ai-result.html",
+        "blog-why-ai-ancestry-results-change.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "https://www.archives.gov/news/articles/standout-census-4",
         "https://www.tiktok.com/@ancestorlens",
         "https://x.com/AncestorLensApp",
         "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
@@ -5455,6 +5738,172 @@
       "issues": []
     },
     {
+      "file": "blog-no-dna-matches-one-side-family.html",
+      "url": "https://ancestor-lens.com/blog-no-dna-matches-one-side-family.html",
+      "title": "Why Do I Have No DNA Matches on One Side of My Family?",
+      "titleLength": 54,
+      "description": "No DNA matches on your mother's or father's side? Learn why one family branch may seem missing, what it can mean and what to check before assuming a family secret.",
+      "descriptionLength": 163,
+      "h1": [
+        "Why Do I Have No DNA Matches on One Side of My Family?"
+      ],
+      "headings": [
+        [
+          "title",
+          "Why Do I Have No DNA Matches on One Side of My Family?"
+        ],
+        [
+          "h1",
+          "Why Do I Have No DNA Matches on One Side of My Family?"
+        ],
+        [
+          "h3",
+          "Explore Your Visual Heritage"
+        ],
+        [
+          "h2",
+          "First: A DNA Match Database Is Not Your Entire Family"
+        ],
+        [
+          "h2",
+          "Reason 1: Few People From That Side Have Tested"
+        ],
+        [
+          "h2",
+          "Reason 2: Your Family Branch Is Small"
+        ],
+        [
+          "h2",
+          "Reason 3: Your Relatives Tested With Another Company"
+        ],
+        [
+          "h2",
+          "Reason 4: You Do Have Matches \u2014 You Just Don't Recognize Them"
+        ],
+        [
+          "h3",
+          "Start With Known Relatives"
+        ],
+        [
+          "h2",
+          "Reason 5: Parent Labels May Not Mean What You Think"
+        ],
+        [
+          "h2",
+          "What If a Known Cousin Is Missing?"
+        ],
+        [
+          "h2",
+          "Could It Mean My Father Isn't My Biological Father?"
+        ],
+        [
+          "h2",
+          "What If I Have Zero Matches From One Parent Side?"
+        ],
+        [
+          "h3",
+          "Test an Older Relative When Possible"
+        ],
+        [
+          "h2",
+          "What If My Parent Has Matches That I Don't?"
+        ],
+        [
+          "h2",
+          "Could Random Inheritance Remove an Entire Family Side?"
+        ],
+        [
+          "h3",
+          "How to Investigate a Missing Match Side (Step-by-Step)"
+        ],
+        [
+          "h2",
+          "What If I Have Thousands of Matches but Still Can't Identify One Side?"
+        ],
+        [
+          "h2",
+          "Can Ancestor Lens Tell Which Family Side Is Missing?"
+        ],
+        [
+          "h2",
+          "Frequently Asked Questions"
+        ],
+        [
+          "h3",
+          "Why do I have DNA matches only from my mother's side?"
+        ],
+        [
+          "h3",
+          "Why do I have no paternal DNA matches?"
+        ],
+        [
+          "h3",
+          "Does no paternal match mean my father is not my biological father?"
+        ],
+        [
+          "h3",
+          "Can my parent have DNA matches that I don't have?"
+        ],
+        [
+          "h3",
+          "Why don't my DNA matches share my surname?"
+        ],
+        [
+          "h3",
+          "Should I test another relative?"
+        ],
+        [
+          "h2",
+          "Final Thoughts"
+        ],
+        [
+          "h3",
+          "Discover Your Visual Heritage"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-no-dna-matches-one-side-family.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "missingDimensions": 5,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "blog.html",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-how-to-understand-dna-matches.html",
+        "blog-which-parent-did-my-ancestry-come-from.html",
+        "blog-unexpected-dna-results-family-secret.html",
+        "blog-find-biological-parent-with-dna-matches.html",
+        "blog-how-far-back-does-ancestry-dna-go.html",
+        "blog-can-siblings-have-different-ancestry-dna-results.html",
+        "blog-how-to-build-a-family-tree.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "https://www.tiktok.com/@ancestorlens",
+        "https://x.com/AncestorLensApp",
+        "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
       "file": "blog-origins.html",
       "url": "https://ancestor-lens.com/blog-origins.html",
       "title": "What Is My Ancestry? Ways to Discover Your Origins",
@@ -5561,6 +6010,132 @@
         "blog-roots-psychology.html",
         "blog-best-ancestry-apps-without-dna-test.html",
         "index.html#download",
+        "https://www.tiktok.com/@ancestorlens",
+        "https://x.com/AncestorLensApp",
+        "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
+      ],
+      "cards": [],
+      "issues": []
+    },
+    {
+      "file": "blog-phenotype-facial-features-ancestry.html",
+      "url": "https://ancestor-lens.com/blog-phenotype-facial-features-ancestry.html",
+      "title": "What Is a Phenotype? Facial Traits and Ancestry Explained",
+      "titleLength": 57,
+      "description": "What is a phenotype, and can a photo reveal yours? Learn how visible traits relate to genetics, environment and ancestry\u2014and what photos cannot prove.",
+      "descriptionLength": 150,
+      "h1": [
+        "What Is a Phenotype? Facial Traits, Genetics and Ancestry Explained"
+      ],
+      "headings": [
+        [
+          "title",
+          "What Is a Phenotype? Facial Traits and Ancestry Explained"
+        ],
+        [
+          "h1",
+          "What Is a Phenotype? Facial Traits, Genetics and Ancestry Explained"
+        ],
+        [
+          "h3",
+          "Explore Your Facial Heritage"
+        ],
+        [
+          "h2",
+          "Phenotype vs. Genotype: What\u2019s the Difference?"
+        ],
+        [
+          "h2",
+          "Are Facial Features Part of Your Phenotype?"
+        ],
+        [
+          "h2",
+          "Can You Tell Someone\u2019s Ancestry from Their Face?"
+        ],
+        [
+          "h2",
+          "What Can a Photo-Based AI Ancestry App Do?"
+        ],
+        [
+          "h2",
+          "What Can\u2019t a Photograph Tell You?"
+        ],
+        [
+          "h2",
+          "How to Explore Your Heritage Beyond Appearance"
+        ],
+        [
+          "h3",
+          "5 Steps to Investigate Your Family Heritage"
+        ],
+        [
+          "h2",
+          "Frequently Asked Questions"
+        ],
+        [
+          "h3",
+          "Is phenotype the same as ethnicity?"
+        ],
+        [
+          "h3",
+          "Can AI determine my genotype from a selfie?"
+        ],
+        [
+          "h3",
+          "Can two biological relatives have completely different visible traits?"
+        ],
+        [
+          "h3",
+          "Is Ancestor Lens a DNA test?"
+        ],
+        [
+          "h3",
+          "Can you tell someone's exact ancestry from their facial features?"
+        ],
+        [
+          "h3",
+          "Discover Your Visual Heritage with Ancestor Lens"
+        ]
+      ],
+      "canonical": [
+        "https://ancestor-lens.com/blog-phenotype-facial-features-ancestry.html"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "redirect": "",
+      "hreflang": [],
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "missingDimensions": 0,
+      "links": [
+        "index.html",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "index.html#download",
+        "index.html#features",
+        "index.html#faq",
+        "blog.html",
+        "blog.html",
+        "index.html",
+        "blog.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "https://www.genome.gov/genetics-glossary/Phenotype",
+        "https://medlineplus.gov/genetics/understanding/dtcgenetictesting/ancestrytesting/",
+        "index.html",
+        "blog-identify-people-old-family-photos.html",
+        "https://apps.apple.com/us/app/ancestor-lens-ancestry-dna/id6755190587",
+        "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-what-ethnicity-i-look-like.html",
+        "blog-ethnicity-vs-nationality-vs-ancestry.html",
+        "blog-can-dna-predict-your-face.html",
+        "blog-identify-people-old-family-photos.html",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "https://www.genome.gov/genetics-glossary/Phenotype",
+        "https://medlineplus.gov/genetics/understanding/dtcgenetictesting/ancestrytesting/",
         "https://www.tiktok.com/@ancestorlens",
         "https://x.com/AncestorLensApp",
         "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
@@ -5818,6 +6393,7 @@
         "blog.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-identify-people-old-family-photos.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "https://www.tiktok.com/@ancestorlens",
@@ -6305,8 +6881,10 @@
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "blog-dna-shows-ethnicity-i-dont-know-about.html",
+        "blog-no-dna-matches-one-side-family.html",
         "index.html#download",
         "index.html#download",
+        "blog-no-dna-matches-one-side-family.html",
         "blog-dna-shows-ethnicity-i-dont-know-about.html",
         "blog-how-to-understand-dna-matches.html",
         "blog-find-family-medical-history-unknown-parents.html",
@@ -7006,6 +7584,8 @@
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "https://deepqeeb.pro/ancestor-lens-privacy-policy.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-identify-people-old-family-photos.html",
         "blog-can-dna-tell-what-country-you-are-from.html",
         "blog-what-nationality-look-like.html",
         "blog-ai-face-ethnicity-test.html",
@@ -7953,7 +8533,10 @@
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "blog-ai-vs-dna.html",
         "blog-what-country-do-my-facial-features-come-from.html",
+        "blog-identify-people-old-family-photos.html",
         "blog-ai-safety.html",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "blog-phenotype-facial-features-ancestry.html",
         "https://apps.apple.com/us/app/ancestor-lens-dna-ancestry/id6755190587",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
         "https://www.tiktok.com/@ancestorlens",
@@ -8470,6 +9053,22 @@
         ],
         [
           "h3",
+          "How to Identify People in Old Family Photos"
+        ],
+        [
+          "h3",
+          "What Is a Phenotype? Facial Traits & Ancestry"
+        ],
+        [
+          "h3",
+          "Are AI Photo Ancestry Apps Private? What to Check"
+        ],
+        [
+          "h3",
+          "Why Do I Have No DNA Matches on One Side of My Family?"
+        ],
+        [
+          "h3",
           "Can DNA Predict Your Face? What Ancestry Results Can Tell"
         ],
         [
@@ -8715,6 +9314,10 @@
         "blog.html",
         "index.html#download",
         "https://play.google.com/store/apps/details?id=com.deepqeeb.ancestorlens",
+        "blog-identify-people-old-family-photos.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "blog-no-dna-matches-one-side-family.html",
         "blog-can-dna-predict-your-face.html",
         "blog-ethnicity-vs-nationality-vs-ancestry.html",
         "blog-is-1-percent-ancestry-dna-significant.html",
@@ -8778,6 +9381,10 @@
         "https://www.youtube.com/channel/UCjsBum77RkPcAt3qVzpQ8ZA"
       ],
       "cards": [
+        "blog-identify-people-old-family-photos.html",
+        "blog-phenotype-facial-features-ancestry.html",
+        "blog-ai-ancestry-app-photo-privacy.html",
+        "blog-no-dna-matches-one-side-family.html",
         "blog-can-dna-predict-your-face.html",
         "blog-ethnicity-vs-nationality-vs-ancestry.html",
         "blog-is-1-percent-ancestry-dna-significant.html",
